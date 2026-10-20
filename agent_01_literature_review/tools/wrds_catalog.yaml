@@ -1,0 +1,85 @@
+# WRDS datasets the agent may propose for research designs.
+# `access`: assumed = typical university subscription, NOT yet confirmed for our account.
+# Update `access` to confirmed / unavailable once checked on wrds-www.wharton.upenn.edu.
+
+datasets:
+  - name: Compustat North America (Fundamentals Annual/Quarterly)
+    content: Financial statement data, US/Canadian public firms
+    coverage: 1950-present
+    key_ids: gvkey, cik, cusip
+    access: assumed
+  - name: Compustat Segments
+    content: Business and geographic segment data
+    coverage: 1976-present
+    key_ids: gvkey
+    access: assumed
+  - name: CRSP Stock / Security Files
+    content: Daily/monthly returns, prices, shares, delisting
+    coverage: 1925-present
+    key_ids: permno, permco (link to gvkey via CCM)
+    access: assumed
+  - name: I/B/E/S
+    content: Analyst EPS forecasts, recommendations, guidance, actuals
+    coverage: 1976-present
+    key_ids: ticker, cusip
+    access: assumed
+  - name: Audit Analytics
+    content: Audit opinions, audit fees, auditor changes, restatements, SOX 302/404, CAMs, comment letters, legal cases
+    coverage: 2000-present (CAMs 2019-present)
+    key_ids: company_fkey (= CIK)
+    access: assumed
+  - name: ExecuComp
+    content: Executive compensation for S&P 1500
+    coverage: 1992-present
+    key_ids: gvkey, execid
+    access: assumed
+  - name: BoardEx
+    content: Director and executive networks, biographies
+    coverage: 1999-present
+    key_ids: boardex companyid (link table to gvkey/cik)
+    access: assumed
+  - name: ISS (Governance, Directors, Voting Analytics)
+    content: Governance provisions, director data, shareholder proposals and votes
+    coverage: 1990s-present
+    key_ids: cusip, ticker
+    access: assumed
+  - name: Thomson/Refinitiv 13F Institutional Holdings
+    content: Quarterly institutional ownership
+    coverage: 1980-present
+    key_ids: cusip
+    access: assumed
+  - name: TAQ / WRDS Intraday Indicators
+    content: Intraday trades and quotes, spreads, liquidity measures
+    coverage: 1993-present
+    key_ids: symbol, permno via link
+    access: assumed
+  - name: OptionMetrics
+    content: Option prices, implied volatility
+    coverage: 1996-present
+    key_ids: secid, cusip
+    access: assumed
+  - name: WRDS SEC Analytics Suite
+    content: Parsed EDGAR filings (10-K/10-Q/8-K), readability, sentiment, filing index
+    coverage: 1994-present
+    key_ids: cik
+    access: assumed
+  - name: Capital IQ (incl. Key Developments, Transcripts if subscribed)
+    content: Corporate events, earnings call transcripts
+    coverage: 2000s-present
+    key_ids: companyid (link to gvkey)
+    access: assumed
+  - name: Mergent FISD
+    content: Corporate bond issues and characteristics
+    coverage: 1990s-present
+    key_ids: issuer cusip
+    access: assumed
+
+text_data:
+  - name: SEC EDGAR full text (10-K, 10-Q, 8-K, DEF 14A, comment letters)
+    content: Free public filings; full-text search for 2001-present via EDGAR FTS (tool search_edgar_fulltext)
+    useful_sections: Item 1 Business, Item 1A Risk Factors, Item 1C Cybersecurity (FY2023+), Item 7 MD&A, Item 9A Controls, auditor report CAMs, footnotes
+    access: free
+  - name: Loughran-McDonald 10-K files and sentiment word lists
+    content: Cleaned 10-K text and dictionaries
+    coverage: 1993-present
+    access: free

@@ -1,0 +1,330 @@
+# Curated list of accounting research conferences used by Agent 01.
+#
+# access:
+#   public_papers   - program page lists paper titles (and often PDFs) without login
+#   public_sessions - program is public but only at session level, no paper titles
+#   members_only    - paper-level program requires login / attendee access
+#   cfp_only        - only call for papers is published; program not found online
+#   unverified      - not yet checked
+# verified: date this entry was last checked by hand (YYYY-MM-DD)
+#
+# Discovery feed: the EAA Accounting Research Calendar (https://eaa-online.org/arc/) aggregates
+# calls for papers for most conferences below; see fetch_conference_calendar.py.
+# SSRN's ARN conference pages are stale (archive ends 2019, announcements end 2018) and are not used.
+
+conferences:
+  - id: jar
+    name: Ray Ball Journal of Accounting Research Conference
+    organizer: Chicago Booth / JAR
+    typical_month: May
+    homepage: https://www.chicagobooth.edu/research/chookaszian/events/jar-conference
+    access: public_papers
+    notes: Invitation only. 2026 page lists 7 papers with conference-version PDFs and a schedule PDF.
+    verified: 2026-10-20
+
+  - id: jae
+    name: Journal of Accounting and Economics Conference
+    organizer: JAE (host school rotates; 2026 UNC Kenan-Flagler, 2027 Rochester)
+    typical_month: October-November
+    homepage: https://eaa-online.org/arc/?p=6649
+    access: cfp_only
+    notes: Invitation only; host school posts the program. Papers later appear in the JAE conference issue.
+    verified: 2026-10-20
+
+  - id: car
+    name: Contemporary Accounting Research Conference
+    organizer: CAAA / CAR
+    typical_month: October
+    homepage: null
+    access: unverified
+    notes: Find current-year program via web search.
+
+  - id: pcaob_car
+    name: PCAOB / CAR Conference on Auditing and Capital Markets
+    organizer: PCAOB, Contemporary Accounting Research
+    typical_month: September-October
+    homepage: https://pcaobus.org/news-events/events/2026-conference-on-auditing-and-capital-markets--conference-announcement-and-call-for-papers
+    access: unverified
+    notes: pcaobus.org blocks scripted access (HTTP 403); use web search or a browser.
+    verified: 2026-10-20
+
+  - id: rast
+    name: Review of Accounting Studies Conference
+    organizer: RAST
+    typical_month: December
+    homepage: null
+    access: unverified
+
+  - id: stanford_summer_camp
+    name: Stanford Accounting Summer Camp
+    organizer: Stanford GSB
+    typical_month: August
+    homepage: https://www.gsb.stanford.edu/faculty-research/faculty/conferences/accounting-summer-camp
+    access: public_sessions
+    notes: 2026 event page lists presenters and discussants but no paper titles.
+    verified: 2026-10-20
+
+  - id: lbs_symposium
+    name: London Business School Accounting Symposium
+    organizer: London Business School
+    typical_month: June
+    homepage: https://www.london.edu/faculty-and-research/accounting/events/lbs-accounting-symposium
+    access: cfp_only
+    verified: 2026-10-20
+
+  - id: utah_wac
+    name: Utah Winter Accounting Conference
+    organizer: University of Utah / BYU
+    typical_month: February
+    homepage: https://www.utah-wac.org/
+    program_url_pattern: https://www.utah-wac.org/{year}/program.html
+    access: public_papers
+    notes: Past programs 2001-2026 at https://www.utah-wac.org/past.html (no 2021). 2026 page confirmed to list presenter + paper title per session.
+    verified: 2026-10-20
+
+  - id: eaa_congress
+    name: European Accounting Association Annual Congress
+    organizer: EAA
+    typical_month: May
+    homepage: https://eaa-online.org/
+    access: unverified
+
+  - id: caaa_annual
+    name: CAAA Annual Conference
+    organizer: Canadian Academic Accounting Association
+    typical_month: May-June
+    homepage: https://www.caaa.ca/caaa-annual-conference-2026-call-for-papers
+    access: cfp_only
+    verified: 2026-10-20
+
+  - id: hkust_symposium
+    name: HKUST Accounting Research Symposium
+    organizer: HKUST
+    typical_month: December
+    homepage: null
+    access: unverified
+
+  - id: hawaii_arc
+    name: Hawai'i Accounting Research Conference
+    organizer: University of Hawai'i at Manoa
+    typical_month: January
+    homepage: null
+    access: unverified
+
+  - id: illinois_auditing
+    name: University of Illinois Symposium on Audit Research
+    organizer: UIUC
+    typical_month: September-October
+    homepage: null
+    access: unverified
+
+  - id: ku_auditing
+    name: Deloitte / University of Kansas Auditing Symposium
+    organizer: University of Kansas
+    typical_month: May
+    homepage: null
+    access: unverified
+
+  - id: unc_tax
+    name: UNC Tax Symposium
+    organizer: UNC Kenan-Flagler
+    typical_month: April
+    homepage: null
+    access: unverified
+
+  - id: colorado_summer
+    name: Colorado Summer Accounting Research Conference
+    organizer: University of Colorado Boulder
+    typical_month: June
+    homepage: null
+    access: unverified
+
+  - id: smu_symposium
+    name: Singapore Accounting Symposium (SMU)
+    organizer: Singapore Management University
+    typical_month: December
+    homepage: null
+    access: unverified
+
+  - id: kellogg_balachandran
+    name: Bala Balachandran Accounting Conference
+    organizer: Northwestern Kellogg
+    typical_month: August
+    homepage: https://www.kellogg.northwestern.edu/academics-research/events/academic-departments/accounting-information-management/260813_bback/
+    access: unverified
+
+  - id: accounting_horizons
+    name: Accounting Horizons Conference
+    organizer: AAA / George Mason University (2026)
+    typical_month: May
+    homepage: https://som.gmu.edu/2026_accounting_horizons_conference
+    access: public_papers
+    notes: 2026 program PDF reportedly lists paper titles and authors (per search result; PDF not opened yet).
+    program_url: https://webdocs.gmu.edu/wp-content/uploads/2026_Accounting_Horizons_Conference_Program.pdf
+    verified: 2026-10-20
+
+# ---------------------------------------------------------------------------
+# American Accounting Association (AAA) meetings
+#
+# The paper-level page is the meeting's "Program" page:
+#   https://aaahq.org/Meetings/{year}/{slug}/Program
+# On public program pages each session lists: session code + topic, moderator,
+# then for each paper: title, authors with affiliations, "Discussant: name, affiliation".
+# Slugs change across years, so `slugs` maps year -> slug. `program_pages` lists
+# verified paper-level URLs (some meetings use non-standard program paths).
+# Checked 2026-10-20; "papers" = count of "Discussant" entries on the page (~ number of papers).
+# ---------------------------------------------------------------------------
+
+aaa_meetings:
+  - id: aaa_annual
+    name: AAA Global Connect (Annual Meeting until 2025)
+    typical_month: August
+    slugs: {2015-2025: Annual-Meeting, 2026-2027: AAA-Global-Connect}
+    access: members_only
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/AAA-Global-Connect/Program/Concurrent-Sessions?dID=01
+      2025: https://aaahq.org/Meetings/2025/Annual-Meeting/Program/Concurrent-Sessions?dID=1
+    notes: >
+      Concurrent-session pages (dID=01..08, 101..103) show no papers without login, even in a browser.
+      The program PDF with abstracts (/Program-pdfs) is attendee-only. Export manually to inputs/conference_programs/.
+      From 2026 the DATA and Sustainability conferences are folded into Global Connect.
+    verified: 2026-10-20
+
+  - id: aaa_fars
+    name: Financial Accounting and Reporting Section (FARS) Midyear Meeting
+    typical_month: January
+    slugs: {2016-2018: Financial-Accounting-And-Reporting-Section, 2019-2020: Financial-Accounting-and-Reporting-Section, 2025-2027: FARS-Midyear-Meeting}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting/Program   # ~136 papers
+      2025: https://aaahq.org/Meetings/2025/FARS-Midyear-Meeting/Program   # ~135 papers
+    notes: 2021-2024 slug not found in AAA archive; older programs were on All Academic (https://convention2.allacademic.com/one/aaa/fars23/).
+    verified: 2026-10-20
+
+  - id: aaa_auditing
+    name: Auditing Section Midyear Meeting
+    typical_month: January
+    slugs: {2016-2020: Auditing-Section-Midyear-Meeting, 2025-2027: Auditing-Section-Midyear-Meeting}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/Auditing-Section-Midyear-Meeting/Program   # ~103 papers
+    notes: 2025 has no Program page (404).
+    verified: 2026-10-20
+
+  - id: aaa_mas
+    name: Management Accounting Section (MAS) Midyear Meeting
+    typical_month: January
+    slugs: {2016-2020: Management-Accounting, 2024: Management-Accounting-Section-Midyear-Meeting, 2025-2027: MAS-Midyear-Meeting}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/MAS-Midyear-Meeting/Program   # ~122 papers
+      2025: https://aaahq.org/Meetings/2025/MAS-Midyear-Meeting/Program   # ~116 papers
+    abstracts_pdf:
+      2026: https://aaahq.org/portals/0/documents/meetings/2026/MAS/2026%20MAS%20Abstracts.pdf
+      2025: https://aaahq.org/portals/0/2025%20MAS%20Abstracts.pdf
+    verified: 2026-10-20
+
+  - id: aaa_ata
+    name: American Taxation Association (ATA) Midyear Meeting
+    typical_month: February
+    slugs: {2015-2027: ATA-Midyear-Meeting}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/ATA-Midyear-Meeting/Program   # ~39 papers, many with full-paper PDFs
+      2025: https://aaahq.org/Meetings/2025/ATA-Midyear-Meeting/Program   # ~39 papers
+    verified: 2026-10-20
+
+  - id: aaa_ais_set
+    name: Accounting Information Systems / Strategic & Emerging Technologies (AIS-SET) Midyear Meeting
+    typical_month: January
+    slugs: {2016-2019: Accounting-Information-Systems, 2024-2025: AIS-SET-Midyear-Meeting, 2026-2027: AIS-SET}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/AIS-SET/Program                    # ~47 papers
+      2025: https://aaahq.org/Meetings/2025/AIS-SET-Midyear-Meeting/Program    # ~39 papers
+    verified: 2026-10-20
+
+  - id: aaa_ia
+    name: International Accounting Section Midyear Meeting
+    typical_month: January
+    slugs: {2016-2019: International-Accounting-Section, 2024: IAS-Midyear-Meeting, 2025-2027: IA-Midyear-Meeting}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/IA-Midyear-Meeting/Program   # ~41 papers
+      2025: https://aaahq.org/Meetings/2025/IA-Midyear-Meeting/Program   # ~52 papers
+    verified: 2026-10-20
+
+  - id: aaa_gnp
+    name: Government and Nonprofit Section Midyear Meeting
+    typical_month: March
+    slugs: {2016-2020: Government-and-Nonprofit, 2024-2027: GNP-Midyear-Meeting}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/GNP-Midyear-Meeting/Program3   # ~43 papers (non-standard path)
+      2025: https://aaahq.org/Meetings/2025/GNP-Midyear-Meeting/Program    # ~13 papers
+    verified: 2026-10-20
+
+  - id: aaa_abo
+    name: Accounting, Behavior and Organizations (ABO) Research Conference
+    typical_month: October
+    slugs: {2015-2026: ABO-Research-Conference}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/Meetings/2026/ABO-Research-Conference/Program   # ~68 papers
+    notes: 2025 Program page returns 404.
+    verified: 2026-10-20
+
+  - id: aaa_forensic
+    name: Forensic Accounting Section Research Conference
+    typical_month: September
+    slugs: {2015-2019: Forensic-Accounting-Conference, 2020: Forensic-Accounting-Research-Conference, 2024-2027: Forensic-Accounting-Section-Research-Conference}
+    access: public_papers
+    program_pages:
+      2026: "https://aaahq.org/Meetings/2026/Forensic-Accounting-Section-Research-Conference/Program."   # ~35 papers; trailing dot is part of the URL
+    notes: 2025 Program page loads but lists no papers.
+    verified: 2026-10-20
+
+  - id: aaa_sustainability
+    name: Sustainability, Environmental and Social (SES/ESG) Accounting Conference
+    typical_month: June
+    slugs: {2024-2025: Sustainability-ESG-Accounting}
+    access: public_papers
+    program_pages:
+      2025: https://aaahq.org/Meetings/2025/Sustainability-ESG-Accounting/Program   # ~43 papers
+    notes: From 2026 integrated into AAA Global Connect (members only).
+    verified: 2026-10-20
+
+  - id: aaa_data
+    name: DATA (Data Analytics and Technologies in Accounting) Conference
+    typical_month: June
+    slugs: {2025: DATA}
+    access: public_sessions
+    program_pages:
+      2025: https://aaahq.org/Meetings/2025/DATA/program
+    notes: Program page has no paper/discussant listings. From 2026 integrated into AAA Global Connect.
+    verified: 2026-10-20
+
+  - id: aaa_jiar
+    name: Journal of International Accounting Research (JIAR) Conference
+    typical_month: varies
+    slugs: {2015-2026: JIAR}
+    access: public_papers
+    program_pages:
+      2026: https://aaahq.org/portals/0/documents/meetings/2026/IAR2026_Program_Landscape_Final_v3.pdf%20copy.pdf
+    notes: Program is a PDF linked from https://aaahq.org/Meetings/2026/JIAR (PDF contents not yet checked).
+    verified: 2026-10-20
+
+  - id: aaa_jmar
+    name: Journal of Management Accounting Research (JMAR) Conference
+    typical_month: varies
+    slugs: {2027: JMAR}
+    access: cfp_only
+    notes: 2027 conference in Vienna; call for papers at https://aaahq.org/Meetings/2027/JMAR
+    verified: 2026-10-20
+
+  - id: aaa_jis
+    name: Journal of Information Systems (JIS) Conference
+    typical_month: varies
+    slugs: {2024: JIS}
+    access: unverified
+    notes: https://aaahq.org/Meetings/2024/JIS has no program links.

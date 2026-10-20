@@ -1,0 +1,80 @@
+name: Agent 01 - Literature Review & Ideas
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Research area or topic"
+        required: true
+        default: "Open scan: financial reporting, disclosure, auditing, and tax opportunities from recent news"
+      n_ideas:
+        description: "Number of research ideas"
+        required: true
+        default: "5"
+      news_months:
+        description: "News window (months)"
+        required: true
+        default: "6"
+      run_id:
+        description: "(Optional) run id created by the web UI; overrides the fields above"
+        required: false
+        default: ""
+
+permissions:
+  contents: write   # commit results back so the next run can reuse them
+
+concurrency:
+  group: agent-01   # one run at a time to avoid conflicting commits
+  cancel-in-progress: false
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: agent_01_literature_review/requirements.txt
+      - run: pip install -r agent_01_literature_review/requirements.txt
+
+      - name: Run agent
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-6.1-sol' }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          TOPIC: ${{ inputs.topic }}
+        run: |
+          if [ -n "${{ inputs.run_id }}" ]; then
+            python -u agent_01_literature_review/agent_01_literature_review.py --run-id "${{ inputs.run_id }}"
+          else
+            python -u agent_01_literature_review/agent_01_literature_review.py "$TOPIC" \
+              --ideas "${{ inputs.n_ideas }}" --news-months "${{ inputs.news_months }}"
+          fi
+
+      - name: Show idea bank (new, updated, and earlier ideas) in job summary
+        if: success()
+        run: |
+          cat agent_01_literature_review/idea_bank/idea_bank.md >> "$GITHUB_STEP_SUMMARY"
+          echo "LATEST=$(ls -td agent_01_literature_review/outputs/2*/ | head -1)" >> "$GITHUB_ENV"
+
+      - name: Upload result files
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-01-results
+          path: ${{ env.LATEST }}
+
+      - name: Commit results for future runs
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add agent_01_literature_review/outputs agent_01_literature_review/idea_bank
+          git commit -m "Agent 01 results: ${{ inputs.topic }}" || exit 0
+          git pull --rebase && git push

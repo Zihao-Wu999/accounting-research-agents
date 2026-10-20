@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accounting Research Agents</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --text: #1c1c1a; --muted: #6b6b66; --border: #e3e3de;
+    --accent: #1f5f8b; --accent-text: #ffffff; --ok: #2e7d4f; --err: #b3261e; --code: #f0f0ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161615; --panel: #1f1f1d; --text: #ecece8; --muted: #9a9a94; --border: #33332f;
+      --accent: #6aa9d8; --accent-text: #0e1a24; --ok: #6cc28f; --err: #f28b82; --code: #2a2a27;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 0 0 12px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  input, select { width: 100%; padding: 9px 10px; border: 1px solid var(--border); border-radius: 7px;
+                  background: var(--bg); color: var(--text); font: inherit; }
+  .grid { display: grid; grid-template-columns: 1fr 140px 140px; gap: 12px; align-items: end; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } .grid .wide { grid-column: 1 / -1; } }
+  button { padding: 10px 22px; border: 0; border-radius: 7px; background: var(--accent); color: var(--accent-text);
+           font: 600 15px/1 inherit; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  .row { display: flex; gap: 12px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+  .status { font-weight: 600; }
+  .status.succeeded { color: var(--ok); } .status.failed { color: var(--err); }
+  pre.log { background: var(--code); border-radius: 7px; padding: 10px; max-height: 280px; overflow: auto;
+            font: 12px/1.5 ui-monospace, Menlo, monospace; white-space: pre-wrap; margin: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  td, th { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--border); }
+  tr.clickable { cursor: pointer; } tr.clickable:hover { background: var(--code); }
+  .idea { border-top: 1px solid var(--border); padding-top: 14px; margin-top: 14px; }
+  .idea h3 { margin: 0 0 6px; font-size: 16px; }
+  .tags { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+  .idea p { margin: 6px 0; }
+  .k { font-weight: 600; }
+  a { color: var(--accent); }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Accounting Research Agents</h1>
+  <p class="sub">Agent 01 — Literature Review &amp; Idea Generation. Each run builds on previous results.</p>
+
+  <section class="panel" id="auth">
+    <label for="pw">Access password</label>
+    <div class="row" style="margin-top:0">
+      <input id="pw" type="password" style="max-width:320px" placeholder="APP_PASSWORD">
+      <button id="savePw">Save</button>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>New run</h2>
+    <div class="grid">
+      <div class="wide">
+        <label for="topic">Research area or topic</label>
+        <input id="topic" value="Open scan: financial reporting, disclosure, auditing, and tax opportunities from recent news">
+      </div>
+      <div><label for="ideas">Ideas</label><input id="ideas" type="number" min="1" max="10" value="5"></div>
+      <div><label for="months">News window (months)</label><input id="months" type="number" min="1" max="24" value="6"></div>
+    </div>
+    <div class="row">
+      <button id="run">Run</button>
+      <span id="runMsg" class="sub" style="margin:0"></span>
+    </div>
+  </section>
+
+  <section class="panel hidden" id="current">
+    <h2>Run <span id="curId"></span> · <span id="curStatus" class="status"></span></h2>
+    <pre class="log" id="log"></pre>
+    <div id="result"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Previous runs</h2>
+    <table><thead><tr><th>#</th><th>Topic</th><th>Status</th><th>Created</th></tr></thead>
+      <tbody id="runs"></tbody></table>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let pw = ""; try { pw = localStorage.getItem("appPassword") || ""; } catch (e) {}
+$("pw").value = pw;
+$("savePw").onclick = () => { pw = $("pw").value; try { localStorage.setItem("appPassword", pw); } catch (e) {} loadRuns(); };
+
+async function api(path, opts = {}) {
+  const res = await fetch(path, { ...opts, headers: { "Content-Type": "application/json", "X-App-Password": pw } });
+  const body = await res.json();
+  if (!res.ok) throw new Error(body.error || res.statusText);
+  return body;
+}
+
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+async function loadRuns() {
+  try {
+    const runs = await api("/api/runs");
+    $("runs").innerHTML = runs.map((r) => `<tr class="clickable" data-id="${r.id}">
+      <td>${r.id}</td><td>${esc(r.params.topic)}</td>
+      <td class="status ${r.status}">${r.status}</td><td>${new Date(r.created_at).toLocaleString()}</td></tr>`).join("");
+    document.querySelectorAll("tr.clickable").forEach((tr) => tr.onclick = () => watch(+tr.dataset.id));
+  } catch (e) { $("runs").innerHTML = `<tr><td colspan="4">${esc(e.message)}</td></tr>`; }
+}
+
+$("run").onclick = async () => {
+  $("run").disabled = true; $("runMsg").textContent = "Starting…";
+  try {
+    const { id } = await api("/api/runs", { method: "POST", body: JSON.stringify({
+      topic: $("topic").value, n_ideas: +$("ideas").value, news_window_months: +$("months").value }) });
+    $("runMsg").textContent = ""; watch(id); loadRuns();
+  } catch (e) { $("runMsg").textContent = "Error: " + e.message; }
+  $("run").disabled = false;
+};
+
+let timer = null;
+async function watch(id) {
+  clearTimeout(timer);
+  let after = 0;
+  $("current").classList.remove("hidden"); $("curId").textContent = "#" + id;
+  $("log").textContent = ""; $("result").innerHTML = "";
+  const tick = async () => {
+    try {
+      const run = await api(`/api/run?id=${id}&after=${after}`);
+      $("curStatus").textContent = run.status; $("curStatus").className = "status " + run.status;
+      for (const l of run.logs) { $("log").textContent += l.message + "\n"; after = l.id; }
+      $("log").scrollTop = $("log").scrollHeight;
+      if (run.status === "succeeded") { renderResult(run.result); loadRuns(); return; }
+      if (run.status === "failed") { $("result").innerHTML = `<p class="status failed">${esc(run.error)}</p>`; loadRuns(); return; }
+    } catch (e) { $("log").textContent += "[ui] " + e.message + "\n"; }
+    timer = setTimeout(tick, 4000);
+  };
+  tick();
+}
+
+function renderResult(r) {
+  const ideas = (r.research_ideas || []).map((x, i) => `<div class="idea">
+    <h3>${i + 1}. ${esc(x.title)}</h3>
+    <div class="tags">Novelty ${x.novelty_score}/5 · Data feasibility: ${esc(x.data.feasibility)}</div>
+    <p><span class="k">Idea.</span> ${esc(x.idea)}</p>
+    <p><span class="k">Research question.</span> ${esc(x.research_question)}</p>
+    <p><span class="k">Gap.</span> ${esc(x.gap)}</p>
+    <p><span class="k">Novel angle.</span> ${esc(x.novelty_angle)}</p>
+    <p><span class="k">Accounting angle.</span> ${esc(x.accounting_angle)}</p>
+    <p><span class="k">Identification.</span> ${esc(x.identification)}</p>
+    <p><span class="k">Data.</span> WRDS: ${esc(x.data.wrds_datasets.join(", "))}. Text: ${esc(x.data.text_data.join(", "))}.
+       ${esc(x.data.feasibility_notes)}</p>
+    <p><span class="k">EDGAR check.</span> ${esc(x.data.edgar_evidence)}</p>
+    <p><span class="k">Risks.</span> ${esc(x.risks)}</p>
+    <p><span class="k">News.</span> ${x.news_triggers.map((n) =>
+      `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.headline)}</a> (${esc(n.source)}, ${esc(n.date)})`).join("; ")}</p>
+  </div>`).join("");
+  $("result").innerHTML = `<h2 style="margin-top:16px">Research ideas</h2>${ideas}
+    <p class="sub" style="margin-top:16px">${(r.papers || []).length} papers reviewed.</p>`;
+}
+
+loadRuns();
+</script>
+</body>
+</html>

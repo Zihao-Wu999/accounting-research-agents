@@ -1,0 +1,399 @@
+{
+  "10.1111/1475-679x.12053": {
+    "paper_id": "10.1111/1475-679x.12053",
+    "title": "The Impact of Recognition Versus Disclosure on Financial Information: A Preparer's Perspective",
+    "authors": [
+      "Shana M. Clor-Proell",
+      "Laureen A. Maines"
+    ],
+    "year": 2014,
+    "venue": "Journal of Accounting Research",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.1111/1475-679x.12053",
+    "research_question": "Does recognition versus footnote disclosure affect managers' contingent-liability estimates?",
+    "sample": "Experiment with corporate controllers and CFOs at public and private companies; sample size and collection period not stated in abstract.",
+    "datasets": [],
+    "identification": "Experiment varying recognition versus disclosure placement and comparing public- and private-company managers.",
+    "main_findings": "Public-company managers expend more cognitive effort, exhibit less strategic bias, and report higher liability estimates under recognition than disclosure. The analogous placement effects are absent among private-company managers.",
+    "theories": [
+      "Cognitive effort",
+      "Strategic reporting bias",
+      "Capital-market pressure"
+    ],
+    "relevance_score": 3,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.1016/j.jacceco.2014.08.007": {
+    "paper_id": "10.1016/j.jacceco.2014.08.007",
+    "title": "Mandatory disclosure and asymmetry in financial reporting",
+    "authors": [
+      "Jeremy Bertomeu",
+      "Robert P. Magee"
+    ],
+    "year": 2014,
+    "venue": "Journal of Accounting and Economics",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.1016/j.jacceco.2014.08.007",
+    "research_question": "Why might managers collectively favor disclosure rules requiring more disclosure about adverse events?",
+    "sample": "Analytical model; no empirical sample.",
+    "datasets": [],
+    "identification": "Model of political influence in which a majority of informed managers chooses mandatory disclosure rules.",
+    "main_findings": "Equilibrium rules require greater disclosure of adverse events. Asymmetry increases with measurement informativeness, verifiability, and ex ante uncertainty.",
+    "theories": [
+      "Political influence over disclosure regulation",
+      "Endogenous mandatory and voluntary disclosure"
+    ],
+    "relevance_score": 3,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2308/tar-2018-0262": {
+    "paper_id": "10.2308/tar-2018-0262",
+    "title": "Voluntary Disclosure Responses to Mandated Disclosure: Evidence from Australian Corporate Tax Transparency",
+    "authors": [
+      "Allison Kays"
+    ],
+    "year": 2021,
+    "venue": "The Accounting Review",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.2308/tar-2018-0262",
+    "research_question": "How do firms supplement mandated public tax-return disclosures?",
+    "sample": "Australian corporate tax-transparency setting; years and sample size not stated in abstract.",
+    "datasets": [],
+    "identification": "Empirical analysis of supplemental voluntary disclosure around mandated tax disclosure; exact estimator not stated in abstract.",
+    "main_findings": "Firms anticipating reputational costs from unexpectedly low disclosed tax liabilities issue preemptive and supplemental information, particularly when supplemental disclosure has low proprietary costs.",
+    "theories": [
+      "Reputational costs",
+      "Proprietary disclosure costs",
+      "Strategic supplemental disclosure"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.1007/s11142-026-09962-3": {
+    "paper_id": "10.1007/s11142-026-09962-3",
+    "title": "Tax numbers and ETR forecasting",
+    "authors": [
+      "Carlyle S. Burd"
+    ],
+    "year": 2026,
+    "venue": "Review of Accounting Studies",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.1007/s11142-026-09962-3",
+    "research_question": "What determines numeric tax disclosure, and how does it relate to analysts' implied ETR forecasts?",
+    "sample": "Financial-statement tax disclosures; sample period and size not stated in abstract.",
+    "datasets": [],
+    "identification": "Empirical analysis of disclosure determinants and forecast outcomes; causal identification not stated in abstract.",
+    "main_findings": "More tax numbers are associated with lower implied ETR forecast errors and dispersion, particularly numbers in footnotes. Narrative emphasis does not provide the same reduction in information frictions.",
+    "theories": [
+      "Proprietary disclosure costs",
+      "Information frictions"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.1111/1475-679x.12617": {
+    "paper_id": "10.1111/1475-679x.12617",
+    "title": "Tax Strategy Disclosure: A Greenwashing Mandate?",
+    "authors": [
+      "Katarzyna Bilicka",
+      "Elisa Casi-Eberhard",
+      "Carol Seregni",
+      "Barbara Stage"
+    ],
+    "year": 2025,
+    "venue": "Journal of Accounting Research",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.1111/1475-679x.12617",
+    "research_question": "Does mandated qualitative tax-strategy disclosure improve transparency and tax compliance?",
+    "sample": "Large businesses affected by the 2016 UK tax-strategy disclosure reform; observation period and sample size not stated in abstract.",
+    "datasets": [],
+    "identification": "Uses the 2016 UK reform as an exogenous disclosure shock; precise estimator not stated in abstract.",
+    "main_findings": "Affected firms increase tax-strategy disclosure, but it becomes more boilerplate. The study finds no significant tax-planning response despite increased media attention.",
+    "theories": [
+      "Reputational enforcement",
+      "Verifiability of qualitative disclosure",
+      "Symbolic compliance"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.1111/1475-679x.12151": {
+    "paper_id": "10.1111/1475-679x.12151",
+    "title": "Do PCAOB Inspections Improve the Quality of Internal Control Audits?",
+    "authors": [
+      "Mark L. DeFond",
+      "Clive S. Lennox"
+    ],
+    "year": 2017,
+    "venue": "Journal of Accounting Research",
+    "status": "published",
+    "source": "OpenAlex via search_journals; publisher abstract verified. Publisher assigns volume 55 to 2017; first online publication was September 12, 2016.",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12151",
+    "research_question": "Do PCAOB inspection findings improve internal-control audit quality?",
+    "sample": "U.S. internal-control audit and inspection setting; sample years and size not stated in abstract.",
+    "datasets": [
+      "PCAOB inspection reports"
+    ],
+    "identification": "Cross-sectional and time-series inspection-content variation with audit-firm and year fixed effects, described by the authors as effectively a difference-in-differences design.",
+    "main_findings": "Higher reported deficiency rates predict more adverse internal-control opinions, including for clients with concurrent misstatements, and higher audit fees. ([onlinelibrary.wiley.com](https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12151?utm_source=openai))",
+    "theories": [
+      "Regulatory remediation incentives"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2308/ajpt-50752": {
+    "paper_id": "10.2308/ajpt-50752",
+    "title": "PCAOB Quality Control Inspection Reports and Auditor Reputation",
+    "authors": [
+      "Albert L. Nagy"
+    ],
+    "year": 2014,
+    "venue": "Auditing: A Journal of Practice & Theory",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.2308/ajpt-50752",
+    "research_question": "Does public disclosure of unremediated quality-control criticism affect auditor reputation?",
+    "sample": "PCAOB-inspected audit firms; sample period and size not stated in abstract.",
+    "datasets": [
+      "PCAOB inspection reports"
+    ],
+    "identification": "Examines audit-firm market-share changes following public disclosure of Part II quality-control criticism.",
+    "main_findings": "Audit firms lose significant market share following public disclosure of quality-control criticisms.",
+    "theories": [
+      "Auditor reputation",
+      "Public signals of audit quality"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.1093/rfs/hhad002": {
+    "paper_id": "10.1093/rfs/hhad002",
+    "title": "Climate Risk Disclosure and Institutional Investors",
+    "authors": [
+      "Emirhan Ilhan",
+      "Philipp Krueger",
+      "Zacharias Sautner",
+      "Laura T. Starks"
+    ],
+    "year": 2023,
+    "venue": "Review of Financial Studies",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.1093/rfs/hhad002",
+    "research_question": "Do institutional investors demand and influence corporate climate-risk disclosure?",
+    "sample": "Institutional-investor survey and observational holdings data; sample period and size not stated in abstract.",
+    "datasets": [],
+    "identification": "Survey, holdings analyses, and a shock to French institutional investors' disclosure demand under Article 173.",
+    "main_findings": "Investors report strong demand for climate disclosure and engagement. Climate-conscious ownership is positively associated with better disclosure, with additional evidence from the French demand shock.",
+    "theories": [
+      "Investor demand for disclosure",
+      "Institutional investor engagement"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.1007/s11142-021-09611-x": {
+    "paper_id": "10.1007/s11142-021-09611-x",
+    "title": "The impact of carbon disclosure mandates on emissions and financial operating performance",
+    "authors": [
+      "Benedikt Downar",
+      "Jürgen Ernstberger",
+      "Stefan Reichelstein",
+      "Sebastian Schwenen",
+      "Aleksandar Zaklan"
+    ],
+    "year": 2021,
+    "venue": "Review of Accounting Studies",
+    "status": "published",
+    "source": "OpenAlex via search_journals; publisher full text verified",
+    "url": "https://link.springer.com/article/10.1007/s11142-021-09611-x",
+    "research_question": "Does mandatory carbon reporting change emissions and operating performance?",
+    "sample": "UK-incorporated listed firms affected by the 2013 mandate versus other European listed firms; ten-year window around 2013. Exact sample size not extracted.",
+    "datasets": [
+      "European Union Transaction Log",
+      "Ownership Links and Enhanced EUTL Dataset Project"
+    ],
+    "identification": "Difference-in-differences linking installation-level verified emissions to ultimate owners.",
+    "main_findings": "Affected firms reduce emissions by about 8% relative to controls without a significant gross-margin change. ([doi.org](https://doi.org/10.1007/s11142-021-09611-x))",
+    "theories": [
+      "Targeted disclosure cycle theory",
+      "Stakeholder pressure"
+    ],
+    "relevance_score": 4,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2308/tar-2017-0550": {
+    "paper_id": "10.2308/tar-2017-0550",
+    "title": "Complementarity between Audited Financial Reporting and Voluntary Disclosure: The Case of Former Andersen Clients",
+    "authors": [
+      "Richard M. Frankel",
+      "Alon Kalay",
+      "Gil Sadka",
+      "Yuan Zou"
+    ],
+    "year": 2021,
+    "venue": "The Accounting Review",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.2308/tar-2017-0550",
+    "research_question": "Are audited reporting quality and voluntary disclosure complementary?",
+    "sample": "Former Arthur Andersen clients forced to change auditors; exact years and sample size not stated in abstract.",
+    "datasets": [],
+    "identification": "Uses forced auditor changes and cross-sectional changes in financial-reporting quality.",
+    "main_findings": "Former Andersen clients increase forecast frequency, precision, and specificity after changing auditors; larger reporting-quality improvements accompany larger disclosure increases.",
+    "theories": [
+      "Confirmation hypothesis",
+      "Complementarity between audited and voluntary reporting"
+    ],
+    "relevance_score": 4,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2308/accr-51936": {
+    "paper_id": "10.2308/accr-51936",
+    "title": "Banks' Financial Reporting Frequency and Asset Quality",
+    "authors": [
+      "Karthik Balakrishnan",
+      "Aytekin Ertan"
+    ],
+    "year": 2017,
+    "venue": "The Accounting Review",
+    "status": "published",
+    "source": "OpenAlex via search_journals; abstract returned",
+    "url": "https://doi.org/10.2308/accr-51936",
+    "research_question": "Does quarterly reporting affect banks' loan quality and risk-taking?",
+    "sample": "Banks observed from 2000 to 2014; sample size not stated in abstract.",
+    "datasets": [],
+    "identification": "Examines banks switching to quarterly disclosure; precise estimator not stated in abstract.",
+    "main_findings": "Switching banks experience an approximately 11% relative decline in nonperforming loans and lower deposit rates and CDS spreads, consistent with market discipline.",
+    "theories": [
+      "Market discipline"
+    ],
+    "relevance_score": 4,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2139/ssrn.5542138": {
+    "paper_id": "10.2139/ssrn.5542138",
+    "title": "Anticipating Change: Stock Market and Firm Responses to Disaggregation in Income Tax Disclosures",
+    "authors": [
+      "Derek Christensen",
+      "Dan Lynch",
+      "Anh Nguyen",
+      "Max Pflitsch"
+    ],
+    "year": 2025,
+    "venue": "SSRN; also presented at 2026 FARS and EAA meetings",
+    "status": "working_paper",
+    "source": "search_ssrn; SSRN abstract recovered by web search; 2026 FARS program verified",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5542138",
+    "research_question": "How do investors and managers anticipate ASU 2023-09?",
+    "sample": "Firms with differing exposure to ASU 2023-09; years and sample size not stated in abstract. SSRN revision dated February 4, 2026.",
+    "datasets": [],
+    "identification": "Relative stock returns around standard-setting milestones and exposure-related reporting responses.",
+    "main_findings": "More exposed firms have positive relative milestone returns and reduce disclosed tax risk. The authors attribute the short-run risk reduction to reporting discretion rather than reduced tax avoidance. ([papers.ssrn.com](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5542138&utm_source=openai))",
+    "theories": [
+      "Disclosure benefits and costs",
+      "Anticipatory reporting discretion"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2139/ssrn.7355339": {
+    "paper_id": "10.2139/ssrn.7355339",
+    "title": "The Value of Tax Transparency",
+    "authors": [
+      "Jaron H. Wilde",
+      "Ryan J. Wilson",
+      "Joshua Wiseman"
+    ],
+    "year": 2026,
+    "venue": "SSRN",
+    "status": "working_paper",
+    "source": "search_ssrn; SSRN abstract recovered by web search",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7355339",
+    "research_question": "How do investors respond to first-time jurisdiction-level tax disclosures under ASU 2023-09?",
+    "sample": "First ASU 2023-09-compliant Forms 10-K; sample size not stated in abstract. Revised September 18, 2026.",
+    "datasets": [
+      "SEC EDGAR Form 10-K and Exhibit 21 disclosures"
+    ],
+    "identification": "Filing-window return associations with disclosed rate-lowering jurisdictions, haven versus non-haven comparisons, and prior-year filing comparisons.",
+    "main_findings": "Positive filing-window return associations concentrate in disclosures identifying rate-lowering tax havens; the authors report no comparable positive prior-year association. This is not presented here as randomized causal evidence. ([papers.ssrn.com](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7355339&utm_source=openai))",
+    "theories": [],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2139/ssrn.7220660": {
+    "paper_id": "10.2139/ssrn.7220660",
+    "title": "Staying under the radar: The case of sustainability disclosures in the US",
+    "authors": [
+      "Khrystyna Bochkay",
+      "Thorsten Sellhorn",
+      "Katharina J. Weiß"
+    ],
+    "year": 2026,
+    "venue": "SSRN; TRR 266 Accounting for Transparency Working Paper No. 244",
+    "status": "working_paper",
+    "source": "search_ssrn; author-affiliated research-center abstract verified",
+    "url": "https://www.accounting-for-transparency.de/de/publications/no-244-staying-under-the-radar-the-case-of-sustainability-disclosures-in-the-us/",
+    "research_question": "Do U.S. firms camouflage sustainability reporting or substantively retrench amid the anti-ESG turn?",
+    "sample": "10-K reports from 2020–2025 and firms' SASB adoption data; sample size not stated in abstract.",
+    "datasets": [
+      "SEC EDGAR Form 10-K disclosures",
+      "SASB adoption data; provider not stated in abstract"
+    ],
+    "identification": "Disclosure-pattern analysis with U.S. versus non-U.S. comparisons for SASB adoption; a clean causal design is not stated in abstract.",
+    "main_findings": "Salient ESG terminology and framework affiliation decline first; broader topic coverage changes less sharply. By 2025, sustainability-text length and action mentions also weaken. The authors cannot fully distinguish camouflage from broader retrenchment. ([accounting-for-transparency.de](https://www.accounting-for-transparency.de/de/publications/no-244-staying-under-the-radar-the-case-of-sustainability-disclosures-in-the-us/?utm_source=openai))",
+    "theories": [
+      "ESG camouflage",
+      "Political pressures on disclosure"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2139/ssrn.5481486": {
+    "paper_id": "10.2139/ssrn.5481486",
+    "title": "Less is More? The Effect of Reporting Frequency on Financial Reporting Quality",
+    "authors": [
+      "Sam Islam",
+      "Clark M. Wheatley"
+    ],
+    "year": 2025,
+    "venue": "SSRN",
+    "status": "working_paper",
+    "source": "search_ssrn; web metadata cross-check. The index returned Shariful Islam; additional metadata returned Sam Islam. Author-name reconciliation remains necessary.",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5481486",
+    "research_question": "Reporting frequency and financial-reporting quality, as indicated by the title; abstract not recovered.",
+    "sample": "Not stated in abstract; abstract unavailable.",
+    "datasets": [],
+    "identification": "Not stated in abstract; abstract unavailable.",
+    "main_findings": "Not stated in abstract; abstract unavailable. Treat as an overlap alert, not evidence for an empirical conclusion.",
+    "theories": [],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  },
+  "10.2139/ssrn.7039063": {
+    "paper_id": "10.2139/ssrn.7039063",
+    "title": "Should Regulators Allow Public-Firm Managers to Unilaterally Reduce Reporting Frequency?",
+    "authors": [
+      "Jesse M. Fried"
+    ],
+    "year": 2026,
+    "venue": "SSRN",
+    "status": "working_paper",
+    "source": "OpenAlex via search_ssrn; abstract missing and direct SSRN retrieval unsuccessful",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7039063",
+    "research_question": "Managerial authority to reduce reporting frequency, as indicated by title; abstract not recovered.",
+    "sample": "Not stated in abstract; abstract unavailable.",
+    "datasets": [],
+    "identification": "Not stated in abstract; abstract unavailable.",
+    "main_findings": "Not stated in abstract; abstract unavailable.",
+    "theories": [],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 09:09"
+  }
+}

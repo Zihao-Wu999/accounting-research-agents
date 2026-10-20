@@ -1,0 +1,1153 @@
+{
+  "topic": "Open scan of financial reporting, disclosure, auditing, and tax research opportunities; information cutoff October 20, 2026; news window April 20–October 20, 2026.",
+  "research_ideas": [
+    {
+      "title": "1. From Tariff Refund Claims to Reported Earnings: Recognition, Classification, and Auditor Coordination",
+      "news_triggers": [
+        {
+          "headline": "CSMS # 68536553 - CBP Offers Multiple ACE Reports for Monitoring CAPE Refund Claims",
+          "source": "U.S. Customs and Border Protection",
+          "date": "2026-05-04",
+          "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/415c8e9?reqfrom=share"
+        }
+      ],
+      "idea": "Construct a firm-quarter panel tracking the first disclosure, recognition, classification, and subsequent collection of IEEPA tariff refunds. CBP's April 20, 2026 CAPE launch and May 4 explanation of claim-monitoring reports provide observable administrative milestones, but not automatically exogenous firm-level claim approval dates. Study whether firms facing similar disclosed refund uncertainty report different earnings effects and whether reporting choices converge within auditor portfolios. The CBP bulletin confirms that principal, interest, and processing status can be separately tracked by claimants. ([content.govdelivery.com](https://content.govdelivery.com/accounts/USDHSCBP/bulletins/415c8e9?reqfrom=share))",
+      "research_question": "How do verification milestones and auditor coordination affect the timing and income-statement classification of tariff refund recognition?",
+      "accounting_angle": "Directly examines recognition versus disclosure, inventory and cost-of-sales effects, presentation of nonrecurring income, and consistency of accounting judgments across audit clients.",
+      "gap": "10.1111/1475-679x.12053 studies preparer judgments for contingent liabilities, rather than recoveries. 10.1016/j.jacceco.2014.08.007 models asymmetric disclosure rules. Neither retrieved abstract addresses administrative verification of tariff refund claims or auditor-level convergence in recovery accounting. No directly matching accounting working paper was identified in the returned tariff-refund search, but the SSRN results were noisy.",
+      "novelty_angle": "Links a new recovery setting to a manually validated disclosure-to-recognition-to-cash sequence, separating accounting uncertainty from collection delay. The proposed contribution is not simply that tariffs affect earnings.",
+      "hypotheses": [
+        "H1: Firms disclose refund claims before recognizing earnings benefits when eligibility or recovery remains uncertain.",
+        "H2: Recognition-policy and presentation similarity increase within auditor portfolios after common administrative clarification.",
+        "H3: Recognition before cash collection is associated with more specific explanations of the evidence supporting recognition.",
+        "H4: Reported gross-margin effects differ with whether the related tariff costs remain in inventory or were previously expensed."
+      ],
+      "identification": "Begin with descriptive transition analysis and within-firm recognition hazards around verified administrative milestones. Estimate exposure-by-post specifications using tariff exposure measured from pre-April 20 filings, industry-by-quarter effects, and pretrend tests. Compare accounting choices among firms with similar disclosed claim status and original tariff-cost treatment. Auditor-portfolio convergence is an association unless auditor assignment or clarification timing supplies independently defensible variation; CAPE submission and payment dates must not be treated as exogenous.",
+      "data": {
+        "wrds_datasets": [
+          "Compustat North America (Fundamentals Annual/Quarterly)",
+          "Audit Analytics",
+          "CRSP Stock / Security Files"
+        ],
+        "text_data": [
+          "SEC EDGAR 10-Q and 10-K inventory, contingencies, and accounting-policy footnotes",
+          "SEC EDGAR MD&A discussions of tariff refunds",
+          "SEC EDGAR 8-K earnings-release exhibits"
+        ],
+        "key_variables": [
+          "Refund disclosure: manually validated indicator and disclosed claim amount, scaled by lagged assets.",
+          "Recognition: first explicit recognized receivable or income effect; code uncertainty rather than infer recognition from a generic tariff mention.",
+          "Classification: inventory adjustment, cost of sales, other income, interest income, or unclassified.",
+          "Collection: first explicitly reported cash receipt and amount; distinguish receipt from claim submission or approval.",
+          "Ex ante exposure: pre-April 20, 2026 disclosed tariff costs or import dependence; preserve missing amounts as missing.",
+          "Auditor coordination: leave-one-out recognition-policy similarity within audit-firm portfolios.",
+          "Controls: size, profitability, inventory intensity, leverage, industry, fiscal-quarter timing, and auditor."
+        ],
+        "sample": "U.S. listed operating companies, 2024–October 20, 2026 for the initial panel; future 2026–2027 filings needed for complete collection and reversal outcomes.",
+        "edgar_evidence": "Query \"tariff refunds\"; forms 10-K,10-Q; April 20–October 20, 2026: 512 returned hits; total_is_lower_bound=false. The returned sample contained 100 unique filings, not 100 verified eligible firms. Hits can include exhibits and repeated documents and are rough upper bounds on usable observations.",
+        "feasibility": "medium",
+        "feasibility_notes": "All proposed WRDS subscriptions are cataloged as assumed, not confirmed. EDGAR is free. Claim-level ACE records are not assumed available and are not required. Main risks are missing recognized amounts, endogenous administrative timing, inventory accounting heterogeneity, and a short outcome window. Proceed only after a 50-firm pilot establishes sufficient explicit recognition disclosures."
+      },
+      "related_paper_ids": [
+        "10.1111/1475-679x.12053",
+        "10.1016/j.jacceco.2014.08.007"
+      ],
+      "novelty_score": 4,
+      "risks": "Recognition choices may reflect legitimately different facts rather than discretion. The common launch is not a randomized shock, actual refund eligibility may be unobservable, and the SSRN search returned weakly relevant results. Do not claim a causal auditor effect or definitive absence of competing work."
+    },
+    {
+      "title": "2. The Unexplained Remainder: Residual Aggregation under the New Income Tax Disclosures",
+      "news_triggers": [
+        {
+          "headline": "ASU 2023-09 Income Tax Disclosures: Fortune 500 First-Year Adoption",
+          "source": "SW Accounting & Consulting Corp",
+          "date": "2026-05-02",
+          "url": "https://sw-cpas.com/asu-2023-09-income-tax-disclosures-fortune-500-first-year/"
+        },
+        {
+          "headline": "Save the Date: Annual OECD–USCIB International Tax Conference",
+          "source": "United States Council for International Business",
+          "date": "2026-04-29",
+          "url": "https://uscib.org/save-the-date-annual-oecd-uscib-international-tax-conference/"
+        }
+      ],
+      "idea": "Measure the share of tax information remaining aggregated after the first ASU 2023-09 disclosures, rather than repeat a generic market-reaction study. The May 2 practitioner report describes first-year adoption, while the April 29 OECD–USCIB announcement explicitly identifies enhanced FASB tax disclosures as a conference topic. Separate the rate-reconciliation threshold from the cash-taxes-paid threshold and investigate whether residual aggregation limits reconciliation of tax expense to cash payments. ([sw-cpas.com](https://sw-cpas.com/asu-2023-09-income-tax-disclosures-fortune-500-first-year/?utm_source=openai))",
+      "research_question": "Does residual aggregation under ASU 2023-09 obscure the connection between tax expense, jurisdictional tax effects, and cash taxes paid?",
+      "accounting_angle": "Examines footnote completeness, quantitative disaggregation, comparability, and the informational content of disclosure-only accounting standards.",
+      "gap": "10.2139/ssrn.5542138 already studies anticipatory stock-market and reporting responses, and 10.2139/ssrn.7355339 already studies investor reactions to first jurisdiction-level disclosures. 10.1007/s11142-026-09962-3 relates numeric tax disclosure to ETR forecasting. The narrower proposed gap is the unexplained residual and cross-table reconciliation, not the general value of tax transparency. The two working papers materially constrain novelty. ([papers.ssrn.com](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5542138&utm_source=openai))",
+      "novelty_angle": "A reproducible accounting measure connecting named jurisdictions, residual categories, tax-rate reconciliation, and cash taxes paid. The design explicitly avoids claiming a regression discontinuity when undisclosed below-threshold jurisdiction amounts cannot be observed.",
+      "hypotheses": [
+        "H1: Larger residual shares are associated with less stable year-to-year jurisdictional tax disclosure.",
+        "H2: Firms with larger residual shares provide more supplemental narrative explanation when tax expense and cash taxes diverge.",
+        "H3: Residual aggregation is associated with larger subsequent ETR forecast revisions, conditional on overall numeric disclosure volume.",
+        "H4: Within-firm reductions in residual aggregation improve cross-table reconciliation more than increases in narrative length."
+      ],
+      "identification": "Primary design is a disclosure-measurement study with within-firm comparisons across adoption and, prospectively, the second adoption year. Use fiscal-year adoption timing only after testing seasonality and concurrent tax-law confounds. Estimate associations conditional on pre-adoption disclosure, foreign operations, losses, and tax complexity. No causal threshold design or bunching claim is warranted without independently observed jurisdiction-level amounts below the disclosure threshold.",
+      "data": {
+        "wrds_datasets": [
+          "Compustat North America (Fundamentals Annual/Quarterly)",
+          "Compustat Segments",
+          "I/B/E/S",
+          "Audit Analytics"
+        ],
+        "text_data": [
+          "SEC EDGAR 10-K income-tax rate-reconciliation tables",
+          "SEC EDGAR 10-K cash-taxes-paid tables and accompanying explanations",
+          "SEC EDGAR Exhibit 21 subsidiary lists"
+        ],
+        "key_variables": [
+          "Cash-tax residual: disclosed total net cash taxes paid less separately quantified jurisdictions, avoiding double-counting federal/state/foreign subtotals.",
+          "Rate-reconciliation residual: absolute unallocated reconciling effects divided by a prespecified gross absolute-effects denominator; report signed and absolute variants.",
+          "Cross-table linkage: proportion of named jurisdictions with interpretable information in both tables; absence is not automatically noncompliance.",
+          "Threshold coding: rate-reconciliation threshold uses statutory tax on pretax income or loss; cash-tax jurisdiction threshold uses total income taxes paid net of refunds.",
+          "Numeric disclosure volume and explanatory narrative volume: separate table cells and text, with hand validation.",
+          "Optional ETR forecast outcome: use I/B/E/S only if compatible pretax and after-tax forecasts are available; otherwise omit rather than substitute EPS dispersion.",
+          "Controls: foreign sales, pretax losses, deferred taxes, unrecognized tax benefits when explicitly disclosed, size, auditor, and prior disclosure detail."
+        ],
+        "sample": "U.S. listed public business entities with usable income-tax footnotes, fiscal years 2023–2025 and fiscal-2026 reports available by October 20, 2026; second-year tests require later filings.",
+        "edgar_evidence": "Query \"2023-09\"; form 10-K; April 20–October 20, 2026: 608 returned hits; total_is_lower_bound=false; 99 unique filings in the returned sample. These are mentions, often new-standard discussions, not verified compliant tax tables. The final sample must search earlier 2026 filings as well.",
+        "feasibility": "medium",
+        "feasibility_notes": "All WRDS subscriptions are assumed, not confirmed. Tables are publicly available but require extensive parsing and reconciliation. The 608 hits do not establish an adopter count. A second-year panel is incomplete at the cutoff. I/B/E/S pretax forecast coverage must be established before committing to forecast tests. Close working papers create substantial scoop risk."
+      },
+      "related_paper_ids": [
+        "10.2308/tar-2018-0262",
+        "10.1007/s11142-026-09962-3",
+        "10.1111/1475-679x.12617",
+        "10.2139/ssrn.5542138",
+        "10.2139/ssrn.7355339"
+      ],
+      "novelty_score": 2,
+      "risks": "High overlap with Anticipating Change and The Value of Tax Transparency. Residual categories can be economically appropriate. Foreign cash taxes and foreign rate effects measure different constructs, so unmatched jurisdictions are not evidence of error. Do not infer manipulation or noncompliance from residual aggregation alone."
+    },
+    {
+      "title": "3. Quality-Control Compliance Costs and Small-Auditor Client Retention",
+      "news_triggers": [
+        {
+          "headline": "PCAOB Adopts Amendments to Its Quality Control Standard",
+          "source": "PCAOB",
+          "date": "2026-09-09",
+          "url": "https://pcaobus.org/oversight/standards/standard-setting-research-rulemaking-related-activities/quality-control"
+        }
+      ],
+      "idea": "Study whether QC 1000 implementation costs change audit fees, client retention, and audit-market participation among small audit firms, and whether these effects are moderated by pre-existing quality-control arrangements. The PCAOB adopted amendments on September 9, 2026 intended to reduce compliance costs, including eliminating the design-only requirement and increasing staffing flexibility. This is a prospective study: QC 1000 is scheduled to take effect December 15, 2026, and the September amendments require SEC approval. ([pcaobus.org](https://pcaobus.org/oversight/standards/standard-setting-research-rulemaking-related-activities/quality-control?utm_source=openai))",
+      "research_question": "Do fixed quality-control implementation costs cause small auditors to raise fees, shed clients, or exit issuer auditing, and do cost-reducing amendments mitigate those responses?",
+      "accounting_angle": "Directly concerns audit regulation, audit supply, fees, engagement continuity, and the trade-off between compliance costs and assurance quality.",
+      "gap": "10.1111/1475-679x.12151 examines remediation after inspection deficiencies and finds fee and internal-control reporting responses. 10.2308/ajpt-50752 examines reputation following public QC criticisms. These are not tests of the fixed-cost effects of an ex ante system-design mandate and subsequent regulatory relief. ([onlinelibrary.wiley.com](https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12151?utm_source=openai))",
+      "novelty_angle": "Connects quality-control regulation to extensive-margin audit supply and client reallocation rather than assuming every fee increase represents better audit quality.",
+      "hypotheses": [
+        "H1: Implementation-related fee increases are larger for clients of auditors with fewer pre-rule issuer engagements.",
+        "H2: Small auditors with weakly documented pre-existing QC infrastructure are more likely to reduce issuer-client portfolios.",
+        "H3: Client reallocations are concentrated among economically small engagements.",
+        "H4: Any implementation-related improvement in adverse internal-control reporting is stronger where the auditor had greater pre-rule inspection deficiencies."
+      ],
+      "identification": "Pre-register a continuous-exposure event study using 2024–2025 issuer portfolio size, pre-rule public QC information, and client mix. Use auditor and client fixed effects and pretrend tests; cluster at the audit-firm level. Distinguish anticipation after the original rule, the 2025 postponement, the June 2026 amendment proposal, September adoption, and actual implementation. This is not a clean treated-versus-untreated experiment because most active issuer auditors face the rule and exposure correlates with scale. Do not use nonpublic Form QC conclusions as outcomes.",
+      "data": {
+        "wrds_datasets": [
+          "Audit Analytics",
+          "Compustat North America (Fundamentals Annual/Quarterly)"
+        ],
+        "text_data": [
+          "SEC EDGAR DEF 14A audit-fee and audit-committee disclosures",
+          "SEC EDGAR 8-K Item 4.01 auditor changes",
+          "SEC EDGAR 10-K audit reports and internal-control opinions"
+        ],
+        "key_variables": [
+          "Audit fees: log fees and fee growth from Audit Analytics, reconciled to proxy disclosures.",
+          "Pre-rule portfolio scale: issuer audit-client count from available auditor-client links; validate audit-firm legal-entity matching.",
+          "Client retention and exit: auditor changes and persistent disappearance from issuer auditing, requiring subsequent observations.",
+          "QC gap: pre-rule public inspection criticisms and publicly documented QC arrangements; not inferred from nonpublic Form QC.",
+          "Quality outcomes: adverse internal-control opinions, subsequent restatements, and audit-report lag.",
+          "Controls: client assets, complexity, losses, leverage, industry, auditor tenure, and merger indicators."
+        ],
+        "sample": "U.S. issuer-auditor engagements, 2022–October 20, 2026 for baseline and anticipation analysis; prospective 2027–2029 outcomes required.",
+        "edgar_evidence": "Query \"quality control\"; forms 10-K,DEF 14A; April 20–October 20, 2026: 593 returned hits; total_is_lower_bound=false; 100 unique filings in the returned sample. Many hits concern product quality or exhibits. This is only a generic text-availability screen and does not establish QC 1000 treatment coverage.",
+        "feasibility": "low",
+        "feasibility_notes": "WRDS access is assumed. No post-implementation outcomes exist by the stated cutoff. Core fees and auditor-change data are feasible, but public PCAOB inspection reports and firm-identity validation require supplementary collection. Form QC is nonpublic. The design is suitable for pre-registration, not a completed causal implementation paper today."
+      },
+      "related_paper_ids": [
+        "10.1111/1475-679x.12151",
+        "10.2308/ajpt-50752"
+      ],
+      "novelty_score": 4,
+      "risks": "Future-data dependence, SEC-approval uncertainty for the September amendments, endogenous audit-firm size, concurrent audit-market consolidation, and sparse pre-existing QC disclosures. The QC SSRN search was uninformative and the Semantic Scholar cross-check was rate-limited, so the novelty assessment is provisional."
+    },
+    {
+      "title": "4. Climate Disclosure Retrenchment or Relocation into Financial Reporting?",
+      "news_triggers": [
+        {
+          "headline": "Fact Sheet: Rescission of Climate-Related Disclosure Rules",
+          "source": "SEC",
+          "date": "2026-05-29",
+          "url": "https://www.sec.gov/files/33-11421-fact-sheet.pdf"
+        }
+      ],
+      "idea": "Test whether firms reduce highly visible climate terminology while preserving or expanding financially quantified climate information in MD&A and accounting footnotes after the SEC's May 29, 2026 rescission proposal. Measure movement across sections within the same filing rather than interpret a falling climate-word count as falling disclosure quality. The event is a proposal to rescind the rules, not evidence that an operative disclosure mandate was removed on that date. ([sec.gov](https://www.sec.gov/files/33-11421-fact-sheet.pdf?utm_source=openai))",
+      "research_question": "Does reduced expected climate-specific regulation change where financially material climate information appears, rather than only how much climate language firms use?",
+      "accounting_angle": "Studies the integration of narrative risk disclosure with impairment, useful-life, contingency, and expenditure disclosures in financial reporting.",
+      "gap": "10.1093/rfs/hhad002 establishes investor demand for climate disclosure; 10.1007/s11142-021-09611-x studies a mandate's real effects. Crucially, 10.2139/ssrn.7220660 already documents ESG camouflage and later substantive retrenchment using 2020–2025 10-Ks. The remaining candidate contribution is section-level relocation into quantified accounting information following the specific 2026 proposal, not a new discovery of camouflage. ([accounting-for-transparency.de](https://www.accounting-for-transparency.de/de/publications/no-244-staying-under-the-radar-the-case-of-sustainability-disclosures-in-the-us/?utm_source=openai))",
+      "novelty_angle": "A within-document linkage measure distinguishing politically salient labels from quantified accounting consequences; conditional on demonstrating that the frontier paper does not already implement the same measure.",
+      "hypotheses": [
+        "H1: Politically salient climate terminology declines more than financially quantified climate information.",
+        "H2: Firms with stronger pre-event investor demand preserve accounting-linked climate information more often.",
+        "H3: A subset of firms relocates information from stand-alone risk discussion to asset, expenditure, or contingency discussion.",
+        "H4: Apparent disclosure reductions based on word counts overstate reductions based on validated accounting-linked information."
+      ],
+      "identification": "Use within-firm, section-by-period comparisons and pre-event exposure to the original rule's expected requirements. Include industry-by-period effects and pretrends. Analyze the May 29 proposal as an expectations event, with alternative dates and anticipation tests. Exposure based on foreign or state obligations requires independently verified applicability; geographic sales alone cannot establish legal coverage. Without a credible control group, frame results as disclosure reallocation associations rather than a causal repeal effect.",
+      "data": {
+        "wrds_datasets": [
+          "Compustat North America (Fundamentals Annual/Quarterly)",
+          "Compustat Segments",
+          "Thomson/Refinitiv 13F Institutional Holdings",
+          "Audit Analytics"
+        ],
+        "text_data": [
+          "SEC EDGAR 10-K Item 1A",
+          "SEC EDGAR 10-K Item 7 MD&A",
+          "SEC EDGAR asset, impairment, contingency, and accounting-estimate footnotes",
+          "SEC EDGAR 10-Q updates"
+        ],
+        "key_variables": [
+          "Label intensity: frequency of climate and ESG labels, reported separately from substance.",
+          "Accounting-linked information: human-validated passages connecting climate-related conditions to a quantified financial amount or explicit accounting estimate.",
+          "Relocation: matched topics disappearing from risk factors but remaining or appearing in MD&A or footnotes.",
+          "Quantification: monetary amounts, useful-life changes, impairment amounts, or expenditure commitments explicitly connected to the topic.",
+          "Investor demand: pre-event institutional ownership composition, without assuming 13F identifies climate preferences.",
+          "Controls: industry, size, asset intensity, losses, foreign sales, filing length, and contemporaneous physical-risk disclosures."
+        ],
+        "sample": "U.S. listed operating firms with comparable filings, 2022–October 20, 2026; a complete calendar-year 2026 annual-report test requires 2027 filings.",
+        "edgar_evidence": "Query \"climate-related\"; forms 10-K,10-Q; April 20–October 20, 2026: 624 returned hits; total_is_lower_bound=false; 98 unique filings in the returned sample. SPAC boilerplate and exhibits appear among results. This is a phrase screen, not a census of financially material climate disclosures.",
+        "feasibility": "medium",
+        "feasibility_notes": "WRDS access is assumed. Free EDGAR permits initial measurement development. Low base rates of explicitly quantified climate-related accounting passages, incomplete annual post-event coverage, and extensive hand validation are principal risks. No commercial ESG dataset outside the catalog is assumed."
+      },
+      "related_paper_ids": [
+        "10.1093/rfs/hhad002",
+        "10.1007/s11142-021-09611-x",
+        "10.2139/ssrn.7220660"
+      ],
+      "novelty_score": 2,
+      "risks": "High overlap with Staying under the radar. The 2026 FARS program also contains related climate-disclosure oversight and emissions-reporting work. A new event date alone is insufficient novelty. The proposal may have been anticipated, and word relocation can be mechanical rather than informative."
+    },
+    {
+      "title": "5. Voluntary Quarterly Disclosure as a Commitment When Mandatory Frequency Is Uncertain",
+      "news_triggers": [
+        {
+          "headline": "Statement on Proposing Release for Semiannual Reporting",
+          "source": "SEC",
+          "date": "2026-05-05",
+          "url": "https://www.sec.gov/newsroom/speeches-statements/atkins-statement-proposing-release-semiannual-reporting-050526"
+        }
+      ],
+      "idea": "Study whether firms publicly commit to maintaining quarterly earnings information when regulators propose allowing less frequent mandatory reports. The May 5 proposal would allow a new semiannual Form 10-S in place of three Forms 10-Q if adopted; it does not itself establish a realized switch. The immediately feasible project is commitment disclosure and anticipation, while a later extension could examine whether earnings releases substitute for reduced mandatory filings. ([sec.gov](https://www.sec.gov/newsroom/speeches-statements/atkins-statement-proposing-release-semiannual-reporting-050526?utm_source=openai))",
+      "research_question": "Which firms voluntarily commit to quarterly information production when mandatory reporting frequency may decline, and how credible are those commitments?",
+      "accounting_angle": "Distinguishes mandatory financial statements, voluntary earnings releases, management forecasts, and commitment to a reporting cadence.",
+      "gap": "10.2308/accr-51936 studies bank reporting frequency and loan quality; 10.2308/tar-2017-0550 studies complementarity between audited reporting and voluntary disclosure. 10.2139/ssrn.5481486 directly addresses reporting frequency and reporting quality, while 10.2139/ssrn.7039063 addresses managerial discretion over reporting frequency. The proposed distinction is an explicit, observable commitment to preserve information, not another generic frequency-quality study.",
+      "novelty_angle": "Separates preserving quarterly earnings announcements from preserving quarterly GAAP statements, review assurance, detailed footnotes, and management forecasts. A commitment is coded only from explicit forward-looking statements.",
+      "hypotheses": [
+        "H1: Firms with greater pre-event analyst coverage are more likely to commit explicitly to continued quarterly disclosure.",
+        "H2: Commitments are more specific when firms have a history of regular, detailed voluntary earnings releases.",
+        "H3: Commitments to earnings releases are more common than commitments to preserve the full quarterly financial-reporting package.",
+        "H4: Subsequent disclosure consistency is higher for specific commitments than for generic transparency statements."
+      ],
+      "identification": "As of the cutoff, use a hand-validated commitment-choice design and proposal-window event study, conditioning on pre-proposal reporting practices. Treat commitment choice as endogenous. Only if adoption and actual elections are subsequently verified should the project add an adoption analysis; voluntary switchers versus nonswitchers are not automatically valid DiD treatment and control groups.",
+      "data": {
+        "wrds_datasets": [
+          "Compustat North America (Fundamentals Annual/Quarterly)",
+          "CRSP Stock / Security Files",
+          "I/B/E/S",
+          "Thomson/Refinitiv 13F Institutional Holdings"
+        ],
+        "text_data": [
+          "SEC EDGAR 8-K Item 2.02 and earnings-release exhibits",
+          "SEC EDGAR 10-K and 10-Q reporting-policy statements",
+          "SEC EDGAR 8-K investor-presentation exhibits"
+        ],
+        "key_variables": [
+          "Explicit commitment: preserve quarterly earnings releases, quarterly financial statements, forecasts, or reviewed statements; code these separately.",
+          "Specificity: named cadence, content, and duration rather than generic transparency language.",
+          "Baseline disclosure: quarterly release regularity, financial-statement content, quantitative guidance, and footnote detail.",
+          "Information environment: analyst coverage and institutional ownership measured before May 5, 2026.",
+          "Optional market outcome: short-window abnormal returns around the first explicit commitment, excluding confounding earnings announcements where possible.",
+          "Controls: size, losses, financing needs, volatility, reporting history, fiscal-year end, and industry."
+        ],
+        "sample": "U.S. domestic listed issuers, 2023–October 20, 2026 for baseline and commitment collection. Actual reporting-frequency changes are a conditional future extension, not an observed treatment assumed here.",
+        "edgar_evidence": "Query \"quarterly results\"; form 8-K; April 20–October 20, 2026: 647 returned hits; total_is_lower_bound=false; 95 unique filings in the returned sample. This establishes availability of earnings-release text only. It does not count commitments or semiannual elections.",
+        "feasibility": "low",
+        "feasibility_notes": "WRDS subscriptions are assumed. Explicit commitment statements may be rare and are not established by the EDGAR screen. No final adoption or realized issuer elections were verified in this scan. Require a dedicated commitment-phrase pilot before proceeding; abandon the archival commitment study if the treated sample is too small."
+      },
+      "related_paper_ids": [
+        "10.2308/accr-51936",
+        "10.2308/tar-2017-0550",
+        "10.2139/ssrn.5481486",
+        "10.2139/ssrn.7039063"
+      ],
+      "novelty_score": 2,
+      "risks": "Close overlap with Less is More? and Should Regulators Allow Public-Firm Managers to Unilaterally Reduce Reporting Frequency? Their abstracts were not recovered, preventing a complete overlap assessment. Proposal anticipation, endogenous commitments, a potentially tiny sample, and uncertain future regulatory timing make this a watch-list idea."
+    }
+  ],
+  "papers": [
+    {
+      "paper_id": "10.1111/1475-679x.12053",
+      "title": "The Impact of Recognition Versus Disclosure on Financial Information: A Preparer's Perspective",
+      "authors": [
+        "Shana M. Clor-Proell",
+        "Laureen A. Maines"
+      ],
+      "year": 2014,
+      "venue": "Journal of Accounting Research",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.1111/1475-679x.12053",
+      "research_question": "Does recognition versus footnote disclosure affect managers' contingent-liability estimates?",
+      "sample": "Experiment with corporate controllers and CFOs at public and private companies; sample size and collection period not stated in abstract.",
+      "datasets": [],
+      "identification": "Experiment varying recognition versus disclosure placement and comparing public- and private-company managers.",
+      "main_findings": "Public-company managers expend more cognitive effort, exhibit less strategic bias, and report higher liability estimates under recognition than disclosure. The analogous placement effects are absent among private-company managers.",
+      "theories": [
+        "Cognitive effort",
+        "Strategic reporting bias",
+        "Capital-market pressure"
+      ],
+      "relevance_score": 3
+    },
+    {
+      "paper_id": "10.1016/j.jacceco.2014.08.007",
+      "title": "Mandatory disclosure and asymmetry in financial reporting",
+      "authors": [
+        "Jeremy Bertomeu",
+        "Robert P. Magee"
+      ],
+      "year": 2014,
+      "venue": "Journal of Accounting and Economics",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.1016/j.jacceco.2014.08.007",
+      "research_question": "Why might managers collectively favor disclosure rules requiring more disclosure about adverse events?",
+      "sample": "Analytical model; no empirical sample.",
+      "datasets": [],
+      "identification": "Model of political influence in which a majority of informed managers chooses mandatory disclosure rules.",
+      "main_findings": "Equilibrium rules require greater disclosure of adverse events. Asymmetry increases with measurement informativeness, verifiability, and ex ante uncertainty.",
+      "theories": [
+        "Political influence over disclosure regulation",
+        "Endogenous mandatory and voluntary disclosure"
+      ],
+      "relevance_score": 3
+    },
+    {
+      "paper_id": "10.2308/tar-2018-0262",
+      "title": "Voluntary Disclosure Responses to Mandated Disclosure: Evidence from Australian Corporate Tax Transparency",
+      "authors": [
+        "Allison Kays"
+      ],
+      "year": 2021,
+      "venue": "The Accounting Review",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.2308/tar-2018-0262",
+      "research_question": "How do firms supplement mandated public tax-return disclosures?",
+      "sample": "Australian corporate tax-transparency setting; years and sample size not stated in abstract.",
+      "datasets": [],
+      "identification": "Empirical analysis of supplemental voluntary disclosure around mandated tax disclosure; exact estimator not stated in abstract.",
+      "main_findings": "Firms anticipating reputational costs from unexpectedly low disclosed tax liabilities issue preemptive and supplemental information, particularly when supplemental disclosure has low proprietary costs.",
+      "theories": [
+        "Reputational costs",
+        "Proprietary disclosure costs",
+        "Strategic supplemental disclosure"
+      ],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.1007/s11142-026-09962-3",
+      "title": "Tax numbers and ETR forecasting",
+      "authors": [
+        "Carlyle S. Burd"
+      ],
+      "year": 2026,
+      "venue": "Review of Accounting Studies",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.1007/s11142-026-09962-3",
+      "research_question": "What determines numeric tax disclosure, and how does it relate to analysts' implied ETR forecasts?",
+      "sample": "Financial-statement tax disclosures; sample period and size not stated in abstract.",
+      "datasets": [],
+      "identification": "Empirical analysis of disclosure determinants and forecast outcomes; causal identification not stated in abstract.",
+      "main_findings": "More tax numbers are associated with lower implied ETR forecast errors and dispersion, particularly numbers in footnotes. Narrative emphasis does not provide the same reduction in information frictions.",
+      "theories": [
+        "Proprietary disclosure costs",
+        "Information frictions"
+      ],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.1111/1475-679x.12617",
+      "title": "Tax Strategy Disclosure: A Greenwashing Mandate?",
+      "authors": [
+        "Katarzyna Bilicka",
+        "Elisa Casi-Eberhard",
+        "Carol Seregni",
+        "Barbara Stage"
+      ],
+      "year": 2025,
+      "venue": "Journal of Accounting Research",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.1111/1475-679x.12617",
+      "research_question": "Does mandated qualitative tax-strategy disclosure improve transparency and tax compliance?",
+      "sample": "Large businesses affected by the 2016 UK tax-strategy disclosure reform; observation period and sample size not stated in abstract.",
+      "datasets": [],
+      "identification": "Uses the 2016 UK reform as an exogenous disclosure shock; precise estimator not stated in abstract.",
+      "main_findings": "Affected firms increase tax-strategy disclosure, but it becomes more boilerplate. The study finds no significant tax-planning response despite increased media attention.",
+      "theories": [
+        "Reputational enforcement",
+        "Verifiability of qualitative disclosure",
+        "Symbolic compliance"
+      ],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.1111/1475-679x.12151",
+      "title": "Do PCAOB Inspections Improve the Quality of Internal Control Audits?",
+      "authors": [
+        "Mark L. DeFond",
+        "Clive S. Lennox"
+      ],
+      "year": 2017,
+      "venue": "Journal of Accounting Research",
+      "status": "published",
+      "source": "OpenAlex via search_journals; publisher abstract verified. Publisher assigns volume 55 to 2017; first online publication was September 12, 2016.",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12151",
+      "research_question": "Do PCAOB inspection findings improve internal-control audit quality?",
+      "sample": "U.S. internal-control audit and inspection setting; sample years and size not stated in abstract.",
+      "datasets": [
+        "PCAOB inspection reports"
+      ],
+      "identification": "Cross-sectional and time-series inspection-content variation with audit-firm and year fixed effects, described by the authors as effectively a difference-in-differences design.",
+      "main_findings": "Higher reported deficiency rates predict more adverse internal-control opinions, including for clients with concurrent misstatements, and higher audit fees. ([onlinelibrary.wiley.com](https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12151?utm_source=openai))",
+      "theories": [
+        "Regulatory remediation incentives"
+      ],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.2308/ajpt-50752",
+      "title": "PCAOB Quality Control Inspection Reports and Auditor Reputation",
+      "authors": [
+        "Albert L. Nagy"
+      ],
+      "year": 2014,
+      "venue": "Auditing: A Journal of Practice & Theory",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.2308/ajpt-50752",
+      "research_question": "Does public disclosure of unremediated quality-control criticism affect auditor reputation?",
+      "sample": "PCAOB-inspected audit firms; sample period and size not stated in abstract.",
+      "datasets": [
+        "PCAOB inspection reports"
+      ],
+      "identification": "Examines audit-firm market-share changes following public disclosure of Part II quality-control criticism.",
+      "main_findings": "Audit firms lose significant market share following public disclosure of quality-control criticisms.",
+      "theories": [
+        "Auditor reputation",
+        "Public signals of audit quality"
+      ],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.1093/rfs/hhad002",
+      "title": "Climate Risk Disclosure and Institutional Investors",
+      "authors": [
+        "Emirhan Ilhan",
+        "Philipp Krueger",
+        "Zacharias Sautner",
+        "Laura T. Starks"
+      ],
+      "year": 2023,
+      "venue": "Review of Financial Studies",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.1093/rfs/hhad002",
+      "research_question": "Do institutional investors demand and influence corporate climate-risk disclosure?",
+      "sample": "Institutional-investor survey and observational holdings data; sample period and size not stated in abstract.",
+      "datasets": [],
+      "identification": "Survey, holdings analyses, and a shock to French institutional investors' disclosure demand under Article 173.",
+      "main_findings": "Investors report strong demand for climate disclosure and engagement. Climate-conscious ownership is positively associated with better disclosure, with additional evidence from the French demand shock.",
+      "theories": [
+        "Investor demand for disclosure",
+        "Institutional investor engagement"
+      ],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.1007/s11142-021-09611-x",
+      "title": "The impact of carbon disclosure mandates on emissions and financial operating performance",
+      "authors": [
+        "Benedikt Downar",
+        "Jürgen Ernstberger",
+        "Stefan Reichelstein",
+        "Sebastian Schwenen",
+        "Aleksandar Zaklan"
+      ],
+      "year": 2021,
+      "venue": "Review of Accounting Studies",
+      "status": "published",
+      "source": "OpenAlex via search_journals; publisher full text verified",
+      "url": "https://link.springer.com/article/10.1007/s11142-021-09611-x",
+      "research_question": "Does mandatory carbon reporting change emissions and operating performance?",
+      "sample": "UK-incorporated listed firms affected by the 2013 mandate versus other European listed firms; ten-year window around 2013. Exact sample size not extracted.",
+      "datasets": [
+        "European Union Transaction Log",
+        "Ownership Links and Enhanced EUTL Dataset Project"
+      ],
+      "identification": "Difference-in-differences linking installation-level verified emissions to ultimate owners.",
+      "main_findings": "Affected firms reduce emissions by about 8% relative to controls without a significant gross-margin change. ([doi.org](https://doi.org/10.1007/s11142-021-09611-x))",
+      "theories": [
+        "Targeted disclosure cycle theory",
+        "Stakeholder pressure"
+      ],
+      "relevance_score": 4
+    },
+    {
+      "paper_id": "10.2308/tar-2017-0550",
+      "title": "Complementarity between Audited Financial Reporting and Voluntary Disclosure: The Case of Former Andersen Clients",
+      "authors": [
+        "Richard M. Frankel",
+        "Alon Kalay",
+        "Gil Sadka",
+        "Yuan Zou"
+      ],
+      "year": 2021,
+      "venue": "The Accounting Review",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.2308/tar-2017-0550",
+      "research_question": "Are audited reporting quality and voluntary disclosure complementary?",
+      "sample": "Former Arthur Andersen clients forced to change auditors; exact years and sample size not stated in abstract.",
+      "datasets": [],
+      "identification": "Uses forced auditor changes and cross-sectional changes in financial-reporting quality.",
+      "main_findings": "Former Andersen clients increase forecast frequency, precision, and specificity after changing auditors; larger reporting-quality improvements accompany larger disclosure increases.",
+      "theories": [
+        "Confirmation hypothesis",
+        "Complementarity between audited and voluntary reporting"
+      ],
+      "relevance_score": 4
+    },
+    {
+      "paper_id": "10.2308/accr-51936",
+      "title": "Banks' Financial Reporting Frequency and Asset Quality",
+      "authors": [
+        "Karthik Balakrishnan",
+        "Aytekin Ertan"
+      ],
+      "year": 2017,
+      "venue": "The Accounting Review",
+      "status": "published",
+      "source": "OpenAlex via search_journals; abstract returned",
+      "url": "https://doi.org/10.2308/accr-51936",
+      "research_question": "Does quarterly reporting affect banks' loan quality and risk-taking?",
+      "sample": "Banks observed from 2000 to 2014; sample size not stated in abstract.",
+      "datasets": [],
+      "identification": "Examines banks switching to quarterly disclosure; precise estimator not stated in abstract.",
+      "main_findings": "Switching banks experience an approximately 11% relative decline in nonperforming loans and lower deposit rates and CDS spreads, consistent with market discipline.",
+      "theories": [
+        "Market discipline"
+      ],
+      "relevance_score": 4
+    },
+    {
+      "paper_id": "10.2139/ssrn.5542138",
+      "title": "Anticipating Change: Stock Market and Firm Responses to Disaggregation in Income Tax Disclosures",
+      "authors": [
+        "Derek Christensen",
+        "Dan Lynch",
+        "Anh Nguyen",
+        "Max Pflitsch"
+      ],
+      "year": 2025,
+      "venue": "SSRN; also presented at 2026 FARS and EAA meetings",
+      "status": "working_paper",
+      "source": "search_ssrn; SSRN abstract recovered by web search; 2026 FARS program verified",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5542138",
+      "research_question": "How do investors and managers anticipate ASU 2023-09?",
+      "sample": "Firms with differing exposure to ASU 2023-09; years and sample size not stated in abstract. SSRN revision dated February 4, 2026.",
+      "datasets": [],
+      "identification": "Relative stock returns around standard-setting milestones and exposure-related reporting responses.",
+      "main_findings": "More exposed firms have positive relative milestone returns and reduce disclosed tax risk. The authors attribute the short-run risk reduction to reporting discretion rather than reduced tax avoidance. ([papers.ssrn.com](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5542138&utm_source=openai))",
+      "theories": [
+        "Disclosure benefits and costs",
+        "Anticipatory reporting discretion"
+      ],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.2139/ssrn.7355339",
+      "title": "The Value of Tax Transparency",
+      "authors": [
+        "Jaron H. Wilde",
+        "Ryan J. Wilson",
+        "Joshua Wiseman"
+      ],
+      "year": 2026,
+      "venue": "SSRN",
+      "status": "working_paper",
+      "source": "search_ssrn; SSRN abstract recovered by web search",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7355339",
+      "research_question": "How do investors respond to first-time jurisdiction-level tax disclosures under ASU 2023-09?",
+      "sample": "First ASU 2023-09-compliant Forms 10-K; sample size not stated in abstract. Revised September 18, 2026.",
+      "datasets": [
+        "SEC EDGAR Form 10-K and Exhibit 21 disclosures"
+      ],
+      "identification": "Filing-window return associations with disclosed rate-lowering jurisdictions, haven versus non-haven comparisons, and prior-year filing comparisons.",
+      "main_findings": "Positive filing-window return associations concentrate in disclosures identifying rate-lowering tax havens; the authors report no comparable positive prior-year association. This is not presented here as randomized causal evidence. ([papers.ssrn.com](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7355339&utm_source=openai))",
+      "theories": [],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.2139/ssrn.7220660",
+      "title": "Staying under the radar: The case of sustainability disclosures in the US",
+      "authors": [
+        "Khrystyna Bochkay",
+        "Thorsten Sellhorn",
+        "Katharina J. Weiß"
+      ],
+      "year": 2026,
+      "venue": "SSRN; TRR 266 Accounting for Transparency Working Paper No. 244",
+      "status": "working_paper",
+      "source": "search_ssrn; author-affiliated research-center abstract verified",
+      "url": "https://www.accounting-for-transparency.de/de/publications/no-244-staying-under-the-radar-the-case-of-sustainability-disclosures-in-the-us/",
+      "research_question": "Do U.S. firms camouflage sustainability reporting or substantively retrench amid the anti-ESG turn?",
+      "sample": "10-K reports from 2020–2025 and firms' SASB adoption data; sample size not stated in abstract.",
+      "datasets": [
+        "SEC EDGAR Form 10-K disclosures",
+        "SASB adoption data; provider not stated in abstract"
+      ],
+      "identification": "Disclosure-pattern analysis with U.S. versus non-U.S. comparisons for SASB adoption; a clean causal design is not stated in abstract.",
+      "main_findings": "Salient ESG terminology and framework affiliation decline first; broader topic coverage changes less sharply. By 2025, sustainability-text length and action mentions also weaken. The authors cannot fully distinguish camouflage from broader retrenchment. ([accounting-for-transparency.de](https://www.accounting-for-transparency.de/de/publications/no-244-staying-under-the-radar-the-case-of-sustainability-disclosures-in-the-us/?utm_source=openai))",
+      "theories": [
+        "ESG camouflage",
+        "Political pressures on disclosure"
+      ],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.2139/ssrn.5481486",
+      "title": "Less is More? The Effect of Reporting Frequency on Financial Reporting Quality",
+      "authors": [
+        "Sam Islam",
+        "Clark M. Wheatley"
+      ],
+      "year": 2025,
+      "venue": "SSRN",
+      "status": "working_paper",
+      "source": "search_ssrn; web metadata cross-check. The index returned Shariful Islam; additional metadata returned Sam Islam. Author-name reconciliation remains necessary.",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5481486",
+      "research_question": "Reporting frequency and financial-reporting quality, as indicated by the title; abstract not recovered.",
+      "sample": "Not stated in abstract; abstract unavailable.",
+      "datasets": [],
+      "identification": "Not stated in abstract; abstract unavailable.",
+      "main_findings": "Not stated in abstract; abstract unavailable. Treat as an overlap alert, not evidence for an empirical conclusion.",
+      "theories": [],
+      "relevance_score": 5
+    },
+    {
+      "paper_id": "10.2139/ssrn.7039063",
+      "title": "Should Regulators Allow Public-Firm Managers to Unilaterally Reduce Reporting Frequency?",
+      "authors": [
+        "Jesse M. Fried"
+      ],
+      "year": 2026,
+      "venue": "SSRN",
+      "status": "working_paper",
+      "source": "OpenAlex via search_ssrn; abstract missing and direct SSRN retrieval unsuccessful",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7039063",
+      "research_question": "Managerial authority to reduce reporting frequency, as indicated by title; abstract not recovered.",
+      "sample": "Not stated in abstract; abstract unavailable.",
+      "datasets": [],
+      "identification": "Not stated in abstract; abstract unavailable.",
+      "main_findings": "Not stated in abstract; abstract unavailable.",
+      "theories": [],
+      "relevance_score": 5
+    }
+  ],
+  "streams": [
+    {
+      "name": "Recognition, disclosure placement, and asymmetric verification",
+      "summary": "Preparer experiments and disclosure theory distinguish disclosure location from measurement incentives and emphasize verifiability. These provide conceptual foundations for studying tariff recovery recognition without assuming all recoveries share the same accounting facts.",
+      "key_paper_ids": [
+        "10.1111/1475-679x.12053",
+        "10.1016/j.jacceco.2014.08.007"
+      ]
+    },
+    {
+      "name": "Tax transparency, numeric detail, and strategic reporting",
+      "summary": "Published work differentiates supplemental narrative, numeric information, and substantive tax behavior. Recent working papers already examine anticipatory ASU 2023-09 responses and initial filing-window reactions, leaving only narrower measurement and reconciliation opportunities.",
+      "key_paper_ids": [
+        "10.2308/tar-2018-0262",
+        "10.1007/s11142-026-09962-3",
+        "10.1111/1475-679x.12617",
+        "10.2139/ssrn.5542138",
+        "10.2139/ssrn.7355339"
+      ]
+    },
+    {
+      "name": "Audit oversight, remediation, and reputation",
+      "summary": "Inspection findings can induce costly remediation and adverse internal-control reporting, while public QC criticism can affect auditor market share. A prospective extension concerns fixed compliance costs and the supply of small-auditor engagements.",
+      "key_paper_ids": [
+        "10.1111/1475-679x.12151",
+        "10.2308/ajpt-50752"
+      ]
+    },
+    {
+      "name": "Climate disclosure demand, real effects, and political retrenchment",
+      "summary": "Investor demand and mandate effects are established research streams. The frontier already documents ESG camouflage, making accounting-linked disclosure relocation a more defensible candidate than another vocabulary-count study.",
+      "key_paper_ids": [
+        "10.1093/rfs/hhad002",
+        "10.1007/s11142-021-09611-x",
+        "10.2139/ssrn.7220660"
+      ]
+    },
+    {
+      "name": "Reporting frequency and voluntary disclosure commitment",
+      "summary": "Bank evidence links reporting frequency to discipline, and auditor-switch evidence supports complementarity between reporting quality and forecasts. Recent working-paper titles directly overlap with broad frequency-quality questions.",
+      "key_paper_ids": [
+        "10.2308/accr-51936",
+        "10.2308/tar-2017-0550",
+        "10.2139/ssrn.5481486",
+        "10.2139/ssrn.7039063"
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "description": "The transition from disclosed recovery claims to recognized earnings and subsequent cash collection.",
+      "rationale": "Retrieved recognition evidence concerns contingent liabilities and general disclosure asymmetry, not the administrative verification sequence of tariff recoveries.",
+      "supporting_paper_ids": [
+        "10.1111/1475-679x.12053",
+        "10.1016/j.jacceco.2014.08.007"
+      ]
+    },
+    {
+      "description": "Residual aggregation and cross-table interpretability after mandated tax disaggregation.",
+      "rationale": "Generic transparency and first-filing valuation effects are already covered. A remaining candidate concerns the accounting information that remains unallocated and whether users can connect tax expense to cash taxes.",
+      "supporting_paper_ids": [
+        "10.1007/s11142-026-09962-3",
+        "10.2139/ssrn.5542138",
+        "10.2139/ssrn.7355339"
+      ]
+    },
+    {
+      "description": "Fixed quality-control compliance costs and the extensive margin of issuer-audit supply.",
+      "rationale": "Inspection remediation and reputational consequences differ from the cost of maintaining a compliant QC system. The gap is prospective and cannot yet be tested with implementation outcomes.",
+      "supporting_paper_ids": [
+        "10.1111/1475-679x.12151",
+        "10.2308/ajpt-50752"
+      ]
+    },
+    {
+      "description": "Relocation of quantified climate information into financial-reporting sections.",
+      "rationale": "The frontier already separates salient labels from substance, but the retrieved abstract does not establish a section-linked accounting-quantification analysis.",
+      "supporting_paper_ids": [
+        "10.2139/ssrn.7220660",
+        "10.1093/rfs/hhad002"
+      ]
+    },
+    {
+      "description": "Explicit commitments to preserve different components of quarterly information.",
+      "rationale": "Reporting cadence, earnings announcements, reviewed statements, footnotes, and forecasts are distinct commitments. The retrieved literature does not establish which commitments firms make in the 2026 proposal setting, but missing frontier abstracts prevent a strong novelty claim.",
+      "supporting_paper_ids": [
+        "10.2308/tar-2017-0550",
+        "10.2308/accr-51936",
+        "10.2139/ssrn.5481486",
+        "10.2139/ssrn.7039063"
+      ]
+    }
+  ],
+  "frontier": [
+    {
+      "paper_id": "10.2139/ssrn.5542138",
+      "title": "Anticipating Change: Stock Market and Firm Responses to Disaggregation in Income Tax Disclosures",
+      "venue": "SSRN; 2026 FARS Midyear Meeting; 2026 EAA Congress",
+      "overlap_risk": "high",
+      "note": "Already studies ASU 2023-09 anticipation and reporting discretion. Its presence in the FARS program was verified, as was its EAA presentation. ([aaahq.org](https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting/Program))"
+    },
+    {
+      "paper_id": "10.2139/ssrn.7355339",
+      "title": "The Value of Tax Transparency",
+      "venue": "SSRN; revised September 18, 2026",
+      "overlap_risk": "high",
+      "note": "Already examines first compliant 10-K jurisdiction disclosures and filing-window returns; generic first-adoption market-reaction projects should be rejected. ([papers.ssrn.com](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7355339&utm_source=openai))"
+    },
+    {
+      "paper_id": "10.2139/ssrn.7220660",
+      "title": "Staying under the radar: The case of sustainability disclosures in the US",
+      "venue": "SSRN; TRR 266 Working Paper No. 244",
+      "overlap_risk": "high",
+      "note": "Already documents label changes, framework withdrawal, and later substantive weakening. Full-paper review is required before developing a disclosure-relocation project. ([accounting-for-transparency.de](https://www.accounting-for-transparency.de/de/publications/no-244-staying-under-the-radar-the-case-of-sustainability-disclosures-in-the-us/?utm_source=openai))"
+    },
+    {
+      "paper_id": "10.2139/ssrn.5481486",
+      "title": "Less is More? The Effect of Reporting Frequency on Financial Reporting Quality",
+      "venue": "SSRN",
+      "overlap_risk": "high",
+      "note": "Direct title overlap; abstract unavailable. Author-name metadata conflict must be reconciled."
+    },
+    {
+      "paper_id": "10.2139/ssrn.7039063",
+      "title": "Should Regulators Allow Public-Firm Managers to Unilaterally Reduce Reporting Frequency?",
+      "venue": "SSRN",
+      "overlap_risk": "high",
+      "note": "Direct policy-setting overlap. Indexed metadata found, but abstract and full text were not recovered."
+    }
+  ],
+  "measures": [
+    {
+      "concept": "Recognition-versus-disclosure judgment",
+      "measure": "Reported contingent-liability estimate, cognitive effort, and strategic bias in a preparer experiment; exact instruments not stated in abstract.",
+      "source_paper_ids": [
+        "10.1111/1475-679x.12053"
+      ]
+    },
+    {
+      "concept": "Numeric tax transparency",
+      "measure": "Volume of tax-related numbers, distinguishing footnotes from face statements; associated outcomes include analysts' implied ETR forecast error and dispersion.",
+      "source_paper_ids": [
+        "10.1007/s11142-026-09962-3"
+      ]
+    },
+    {
+      "concept": "Symbolic tax disclosure",
+      "measure": "Tax-strategy disclosure volume, boilerplate, stickiness, and similarity between stand-alone reports and annual reports.",
+      "source_paper_ids": [
+        "10.1111/1475-679x.12617"
+      ]
+    },
+    {
+      "concept": "Internal-control audit remediation",
+      "measure": "Inspection deficiency rates, adverse internal-control opinions, concurrent misstatements, and audit fees.",
+      "source_paper_ids": [
+        "10.1111/1475-679x.12151"
+      ]
+    },
+    {
+      "concept": "Auditor reputation",
+      "measure": "Audit-firm market-share changes after public disclosure of Part II QC criticisms.",
+      "source_paper_ids": [
+        "10.2308/ajpt-50752"
+      ]
+    },
+    {
+      "concept": "Substantive versus cosmetic sustainability reporting",
+      "measure": "Salient ESG terminology, framework references, SASB adoption, topic coverage, industry terminology, text length, and company-action mentions.",
+      "source_paper_ids": [
+        "10.2139/ssrn.7220660"
+      ]
+    },
+    {
+      "concept": "Carbon disclosure real effects",
+      "measure": "Verified installation-level emissions aggregated to firms, emissions intensity relative to sales or cost of goods sold, and gross margins.",
+      "source_paper_ids": [
+        "10.1007/s11142-021-09611-x"
+      ]
+    },
+    {
+      "concept": "Voluntary forecast disclosure",
+      "measure": "Management forecast frequency, precision, and specificity.",
+      "source_paper_ids": [
+        "10.2308/tar-2017-0550"
+      ]
+    },
+    {
+      "concept": "Bank asset quality",
+      "measure": "Nonperforming loans, deposit interest rates, and CDS spreads.",
+      "source_paper_ids": [
+        "10.2308/accr-51936"
+      ]
+    },
+    {
+      "concept": "Jurisdiction-level tax information",
+      "measure": "Indicators and counts of separately disclosed rate-lowering jurisdictions, distinguishing havens from non-havens, and filing-window abnormal returns.",
+      "source_paper_ids": [
+        "10.2139/ssrn.7355339"
+      ]
+    }
+  ],
+  "datasets": [
+    {
+      "name": "SEC EDGAR disclosures; explicitly identified in two included papers",
+      "n_papers": 2
+    },
+    {
+      "name": "PCAOB inspection reports",
+      "n_papers": 2
+    },
+    {
+      "name": "European Union Transaction Log",
+      "n_papers": 1
+    },
+    {
+      "name": "Ownership Links and Enhanced EUTL Dataset Project",
+      "n_papers": 1
+    },
+    {
+      "name": "SASB adoption data; provider not stated in abstract",
+      "n_papers": 1
+    }
+  ],
+  "theories": [
+    {
+      "name": "Strategic disclosure under reputational and proprietary costs",
+      "how_used": "Explains supplemental tax narratives and the trade-off between meeting disclosure requirements and protecting sensitive information.",
+      "source_paper_ids": [
+        "10.2308/tar-2018-0262",
+        "10.1007/s11142-026-09962-3"
+      ]
+    },
+    {
+      "name": "Confirmation hypothesis",
+      "how_used": "Audited reporting quality supports more frequent, precise, and specific voluntary forecasts.",
+      "source_paper_ids": [
+        "10.2308/tar-2017-0550"
+      ]
+    },
+    {
+      "name": "Market discipline",
+      "how_used": "More frequent bank disclosure is linked to lending discipline and lower risk-taking.",
+      "source_paper_ids": [
+        "10.2308/accr-51936"
+      ]
+    },
+    {
+      "name": "Targeted disclosure cycle theory",
+      "how_used": "Stakeholders respond to disclosed emissions, and firms anticipate those responses when choosing subsequent emissions.",
+      "source_paper_ids": [
+        "10.1007/s11142-021-09611-x"
+      ]
+    },
+    {
+      "name": "Auditor reputation and public quality signals",
+      "how_used": "Public QC criticisms communicate information about auditor quality and predict market-share losses.",
+      "source_paper_ids": [
+        "10.2308/ajpt-50752"
+      ]
+    },
+    {
+      "name": "ESG camouflage",
+      "how_used": "Separates reductions in politically salient sustainability markers from reductions in reporting substance.",
+      "source_paper_ids": [
+        "10.2139/ssrn.7220660"
+      ]
+    }
+  ],
+  "bibtex": "@article{ClorProell2014, author={Clor-Proell, Shana M. and Maines, Laureen A.}, title={The Impact of Recognition Versus Disclosure on Financial Information: A Preparer's Perspective}, journal={Journal of Accounting Research}, year={2014}, doi={10.1111/1475-679x.12053}}\n@article{Bertomeu2014, author={Bertomeu, Jeremy and Magee, Robert P.}, title={Mandatory disclosure and asymmetry in financial reporting}, journal={Journal of Accounting and Economics}, year={2014}, doi={10.1016/j.jacceco.2014.08.007}}\n@article{Kays2021, author={Kays, Allison}, title={Voluntary Disclosure Responses to Mandated Disclosure: Evidence from Australian Corporate Tax Transparency}, journal={The Accounting Review}, year={2021}, doi={10.2308/tar-2018-0262}}\n@article{Burd2026, author={Burd, Carlyle S.}, title={Tax numbers and ETR forecasting}, journal={Review of Accounting Studies}, year={2026}, doi={10.1007/s11142-026-09962-3}}\n@article{Bilicka2025, author={Bilicka, Katarzyna and Casi-Eberhard, Elisa and Seregni, Carol and Stage, Barbara}, title={Tax Strategy Disclosure: A Greenwashing Mandate?}, journal={Journal of Accounting Research}, year={2025}, doi={10.1111/1475-679x.12617}}\n@article{DeFond2017, author={DeFond, Mark L. and Lennox, Clive S.}, title={Do PCAOB Inspections Improve the Quality of Internal Control Audits?}, journal={Journal of Accounting Research}, year={2017}, volume={55}, number={3}, pages={591--627}, doi={10.1111/1475-679x.12151}, note={First published online in 2016}}\n@article{Nagy2014, author={Nagy, Albert L.}, title={PCAOB Quality Control Inspection Reports and Auditor Reputation}, journal={Auditing: A Journal of Practice and Theory}, year={2014}, doi={10.2308/ajpt-50752}}\n@article{Ilhan2023, author={Ilhan, Emirhan and Krueger, Philipp and Sautner, Zacharias and Starks, Laura T.}, title={Climate Risk Disclosure and Institutional Investors}, journal={Review of Financial Studies}, year={2023}, doi={10.1093/rfs/hhad002}}\n@article{Downar2021, author={Downar, Benedikt and Ernstberger, Jürgen and Reichelstein, Stefan and Schwenen, Sebastian and Zaklan, Aleksandar}, title={The impact of carbon disclosure mandates on emissions and financial operating performance}, journal={Review of Accounting Studies}, year={2021}, volume={26}, pages={1137--1175}, doi={10.1007/s11142-021-09611-x}}\n@article{Frankel2021, author={Frankel, Richard M. and Kalay, Alon and Sadka, Gil and Zou, Yuan}, title={Complementarity between Audited Financial Reporting and Voluntary Disclosure: The Case of Former Andersen Clients}, journal={The Accounting Review}, year={2021}, doi={10.2308/tar-2017-0550}}\n@article{Balakrishnan2017, author={Balakrishnan, Karthik and Ertan, Aytekin}, title={Banks' Financial Reporting Frequency and Asset Quality}, journal={The Accounting Review}, year={2017}, doi={10.2308/accr-51936}}\n@techreport{Christensen2025, author={Christensen, Derek and Lynch, Dan and Nguyen, Anh and Pflitsch, Max}, title={Anticipating Change: Stock Market and Firm Responses to Disaggregation in Income Tax Disclosures}, institution={SSRN}, year={2025}, doi={10.2139/ssrn.5542138}, note={Revised February 4, 2026; presented at 2026 FARS and EAA meetings}}\n@techreport{Wilde2026, author={Wilde, Jaron H. and Wilson, Ryan J. and Wiseman, Joshua}, title={The Value of Tax Transparency}, institution={SSRN}, year={2026}, doi={10.2139/ssrn.7355339}, note={Revised September 18, 2026}}\n@techreport{Bochkay2026, author={Bochkay, Khrystyna and Sellhorn, Thorsten and Weiß, Katharina J.}, title={Staying under the radar: The case of sustainability disclosures in the US}, institution={TRR 266 Accounting for Transparency}, number={244}, year={2026}, doi={10.2139/ssrn.7220660}}\n@techreport{Islam2025, author={Islam, Sam and Wheatley, Clark M.}, title={Less is More? The Effect of Reporting Frequency on Financial Reporting Quality}, institution={SSRN}, year={2025}, doi={10.2139/ssrn.5481486}, note={Author-name metadata conflict: OpenAlex returned Shariful Islam; additional metadata returned Sam Islam. Abstract not recovered}}\n@techreport{Fried2026, author={Fried, Jesse M.}, title={Should Regulators Allow Public-Firm Managers to Unilaterally Reduce Reporting Frequency?}, institution={SSRN}, year={2026}, doi={10.2139/ssrn.7039063}, note={Abstract not recovered}}",
+  "narrative": "Recognition and disclosure. A first literature stream examines how reporting location and verifiability influence accounting judgments. Clor-Proell and Maines (2014) find that public-company preparers exert more effort and exhibit less strategic bias when contingent liabilities are recognized rather than disclosed. Bertomeu and Magee (2014) model the endogenous selection of asymmetric disclosure rules, emphasizing measurement informativeness and verifiability. These studies motivate examining tariff refunds as a sequence of disclosure, recognition, and collection. Their applicability is conceptual rather than direct: a recovery claim is not a contingent liability, and differences in recognition can reflect differences in underlying rights and evidence.\n\nTax transparency. Published research distinguishes additional information from strategic disclosure responses. Kays (2021) shows that firms supplement mandated Australian tax disclosures when reputational incentives favor explanation. Bilicka et al. (2025) find increased but more boilerplate disclosure following the UK tax-strategy mandate, without a significant tax-planning response. Burd (2026) associates numeric tax detail, especially footnote numbers, with improved implied ETR forecasts. Together, these findings caution against equating longer narratives with greater transparency. The ASU 2023-09 frontier is already crowded. Christensen et al. (2025) document favorable anticipatory market responses and reductions in disclosed tax risk attributable to reporting discretion. Wilde et al. (2026) examine first compliant filings and find positive return associations concentrated in rate-lowering tax-haven disclosures. Consequently, a new project must move beyond adoption effects toward residual aggregation and the interpretability of relationships between tax expense and cash payments. ([papers.ssrn.com](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5542138&utm_source=openai))\n\nAudit oversight. DeFond and Lennox (2017) connect inspection deficiencies to subsequent adverse internal-control opinions and higher fees, consistent with costly remediation. Nagy (2014) finds market-share losses following public quality-control criticism. These studies establish distinct remediation and reputational channels, but neither retrieved abstract answers whether system-level compliance costs change small auditors' participation in issuer auditing. QC 1000 offers a prospective setting for this question, although implementation outcomes cannot be studied as realized events at the October 20, 2026 cutoff. Any design must distinguish scale-related exposure from genuinely exogenous variation. ([onlinelibrary.wiley.com](https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12151?utm_source=openai))\n\nClimate reporting. Ilhan et al. (2023) document institutional demand for climate-risk disclosure, whereas Downar et al. (2021) identify emissions reductions following a UK reporting mandate without a significant gross-margin effect. More directly, Bochkay et al. (2026) show that U.S. firms reduce salient ESG terminology and framework affiliations before broader disclosure substance weakens. This frontier sharply limits novelty for vocabulary-based retrenchment studies. A narrower extension would establish whether quantified climate information migrates into accounting estimates, expenditure discussion, and footnotes, while acknowledging that the May 2026 SEC action was a rescission proposal. ([doi.org](https://doi.org/10.1007/s11142-021-09611-x))\n\nReporting frequency. Balakrishnan and Ertan (2017) link quarterly bank reporting to better loan quality, while Frankel et al. (2021) support complementarity between audited reporting and voluntary forecasts. These results suggest separating a reporting cadence from the information package delivered at that cadence. However, Islam and Wheatley (2025) and Fried (2026) have directly overlapping working-paper titles, and their missing abstracts prevent definitive novelty assessment. The feasible initial question concerns explicit commitments to preserve quarterly information after the May 5 proposal; actual switches must not be assumed. Across all streams, the most defensible opportunities combine validated accounting measures with restrained causal claims, rather than relying on a recent event alone. ([sec.gov](https://www.sec.gov/newsroom/speeches-statements/atkins-statement-proposing-release-semiannual-reporting-050526?utm_source=openai))",
+  "search_log": [
+    {
+      "source": "web.run",
+      "query": "Initial news batch: site.fasb.org 2026 October April July income tax disclosures accounting standard; site.sec.gov 2026 April October financial disclosure rule proposal; site.pcaobus.org 2026 inspection audit April September; site.irs.gov 2026 July corporate tax guidance 2025 law. No result payload returned; not interpreted as zero matching documents.",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "get_wrds_catalog",
+      "query": "Retrieve available project catalog once; all commercial subscriptions returned as assumed.",
+      "n_results": 17,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_journals",
+      "query": "financial reporting frequency disclosure; TAR,JAR,JAE,CAR,RAST,JF,JFE,RFS; 2000–2026; limit 8",
+      "n_results": 8,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_journals",
+      "query": "tax disclosure proprietary costs; TAR,JAR,JAE,CAR,RAST; 2000–2026; limit 6",
+      "n_results": 6,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_journals",
+      "query": "PCAOB inspections audit quality disclosure; TAR,JAR,JAE,CAR,RAST,AJPT; 2000–2026; limit 6",
+      "n_results": 6,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_ssrn",
+      "query": "semiannual quarterly reporting frequency; 2021–2026; limit 5",
+      "n_results": 5,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "site.sec.gov 2026 semiannual; site.pcaobus.org 2026 June quality; site.irs.gov 2026 September guidance; site.fasb.org 2026 tax disclosures. No result payload returned.",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "site.irs.gov/newsroom 2026 June corporate; site.sec.gov/newsroom/press-releases/2026 April May disclosure; 2026 tariff refunds Supreme Court February April May financial reporting contingent assets; 2026 income tax disclosures April May ASU 2023-09 first reports. No result payload returned.",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_journals",
+      "query": "climate disclosure mandate voluntary disclosure; TAR,JAR,JAE,CAR,RAST,MS,JF,JFE,RFS; 2000–2026; limit 5",
+      "n_results": 5,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_journals",
+      "query": "contingent assets recognition disclosure earnings; TAR,JAR,JAE,CAR,RAST; 2000–2026; limit 4",
+      "n_results": 4,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_ssrn",
+      "query": "tariff refunds accounting recognition; 2021–2026; limit 4",
+      "n_results": 4,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_ssrn",
+      "query": "climate disclosure rollback SEC; 2021–2026; limit 4",
+      "n_results": 4,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_ssrn",
+      "query": "QC 1000 audit quality control; 2021–2026; limit 4; results largely unrelated",
+      "n_results": 4,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_ssrn",
+      "query": "ASU 2023-09 income tax disclosure; 2021–2026; limit 5",
+      "n_results": 5,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_edgar_fulltext",
+      "query": "\"tariff refunds\"; forms 10-K,10-Q; 2026-04-20 through 2026-10-20",
+      "n_results": 512,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_edgar_fulltext",
+      "query": "\"2023-09\"; form 10-K; 2026-04-20 through 2026-10-20",
+      "n_results": 608,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_edgar_fulltext",
+      "query": "\"climate-related\"; forms 10-K,10-Q; 2026-04-20 through 2026-10-20",
+      "n_results": 624,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_edgar_fulltext",
+      "query": "\"quality control\"; forms 10-K,DEF 14A; 2026-04-20 through 2026-10-20",
+      "n_results": 593,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_edgar_fulltext",
+      "query": "\"quarterly results\"; form 8-K; 2026-04-20 through 2026-10-20",
+      "n_results": 647,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "SEC 2026 semiannual reporting May proposal; PCAOB 2026 QC 1000 October effective date; tariff refunds April 2026 CBP CAPE. No result payload returned.",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "site.sec.gov 2026 climate disclosure rescind May June September; site.pcaobus.org September 9 2026 QC; site.fasb.org 2026 tax May; 2026 ASU 2023-09 April disclosures. No result payload returned.",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "site.dart.deloitte.com 2026 Spotlight Income Tax April; site.pcaobus.org Adopts Amendments to Quality Control; 2026 FARS tax disclosure program; 2026 conference tariff accounting. No result payload returned.",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "ASU 2023-09 May 2026 disclosure; PCAOB Adopts Amendments to Quality Control; Staying under the radar Bochkay; The Value of Tax Transparency Wilde 2026. No result payload returned.",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "Open SW first-year adoption article, PCAOB amendment release, and SSRN 5542138, 7220660, 5481486, 7039063. No result payload returned.",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_semantic_scholar",
+      "query": "QC 1000 audit quality control; 2021–2026; limit 4; request failed with HTTP 429",
+      "n_results": 0,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_journals",
+      "query": "reporting frequency real effects investment; TAR,JAR,JAE,CAR,RAST; 2000–2026; limit 4",
+      "n_results": 4,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "search_journals",
+      "query": "tax disclosure transparency; TAR,JAR,JAE,CAR,RAST; 2000–2026; limit 4",
+      "n_results": 4,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "site.sec.gov 2026 semiannual; returned-source count, not total search-engine hits",
+      "n_results": 25,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "site.pcaobus.org 2026 September QC 1000 amendments; site.sec.gov 2026 climate disclosure rescind; site.cbp.gov April 20 2026 CAPE refunds; ASU 2023-09 May 2026 disclosure. Returned-source count.",
+      "n_results": 34,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "ASU 2023-09 2026 May tax disclosures first; ASU 2023-09 2026 October; 2026 conference tax transparency accounting; 2026 FARS reporting frequency. Returned-source count.",
+      "n_results": 18,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "Deloitte April 2026 Income Tax Spotlight; Anticipating Change title; The Value of Tax Transparency Wilde; Staying under the radar title; open CBP bulletin 68536553. Returned-source count.",
+      "n_results": 18,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "Open SSRN 5542138,7355339,5481486,7039063 and CBP bulletin; search 2026 FARS climate/tax, Auditing Midyear quality control, JAR conference program, and SEC semiannual final October. Returned records include four failed SSRN opens.",
+      "n_results": 23,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "Open CBP bulletin, QC 1000 text, FARS program; search SSRN 5542138 abstract,7355339,5481486 and FASB 2023-09 5 percent. Returned-source count.",
+      "n_results": 17,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "Search recognition-versus-disclosure title, mandatory-disclosure asymmetry title, DeFond-Lennox title, Nagy title; find 100 in QC text, 2026 in CBP bulletin, Tax and Climate in FARS program. Returned-source count.",
+      "n_results": 21,
+      "retrieved_at": "2026-10-20"
+    },
+    {
+      "source": "web.run",
+      "query": "Open ten included journal DOI pages. One publisher full text recovered for Downar et al.; nine opens failed. Count denotes returned records, including errors.",
+      "n_results": 10,
+      "retrieved_at": "2026-10-20"
+    }
+  ]
+}
