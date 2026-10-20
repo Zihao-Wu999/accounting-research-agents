@@ -1,24 +1,318 @@
 # Research Idea Bank
-_Run 2026-10-20 09:09 · topic: Open scan of financial reporting, disclosure, auditing, and tax research opportunities; information cutoff October 20, 2026; news window April 20–October 20, 2026._
+_Run 2026-10-20 13:23 · topic: Open scan of financial reporting, disclosure, auditing, and tax opportunities; news window April 20–October 20, 2026; literature window 2000–2026._
 
-**5 new · 0 updated · 5 ideas in bank · 16 papers reviewed in total**
+**5 new · 0 updated · 10 ideas in bank · 30 papers reviewed in total**
 
 ## Overview
 
 | ID | This run | Idea | Novelty | Data | Last updated |
 |---|---|---|---|---|---|
-| I-001 | 🆕 new | [1. From Tariff Refund Claims to Reported Earnings: Recognition, Classification, and Auditor Coordination](#i-001) | 4/5 | medium | 2026-10-20 09:09 |
-| I-002 | 🆕 new | [2. The Unexplained Remainder: Residual Aggregation under the New Income Tax Disclosures](#i-002) | 2/5 | medium | 2026-10-20 09:09 |
-| I-003 | 🆕 new | [3. Quality-Control Compliance Costs and Small-Auditor Client Retention](#i-003) | 4/5 | low | 2026-10-20 09:09 |
-| I-004 | 🆕 new | [4. Climate Disclosure Retrenchment or Relocation into Financial Reporting?](#i-004) | 2/5 | medium | 2026-10-20 09:09 |
-| I-005 | 🆕 new | [5. Voluntary Quarterly Disclosure as a Commitment When Mandatory Frequency Is Uncertain](#i-005) | 2/5 | low | 2026-10-20 09:09 |
+| I-006 | 🆕 new | [1. What Is Inside Reported Cash? Cash-Equivalent Composition and the Credibility of Corporate Liquidity](#i-006) | 4/5 | high | 2026-10-20 13:23 |
+| I-007 | 🆕 new | [2. Paying the Customer's Customer: Revenue Deductions, Operating Expenses, and Top-Line Comparability](#i-007) | 4/5 | medium | 2026-10-20 13:23 |
+| I-008 | 🆕 new | [3. Cyber Materiality Labels versus Realized Accounting Losses](#i-008) | 2/5 | medium | 2026-10-20 13:23 |
+| I-009 | 🆕 new | [4. From Carbon-Intensity Evidence to Recognized Tax Credits: Section 45Z Verification and Earnings](#i-009) | 4/5 | medium | 2026-10-20 13:23 |
+| I-010 | 🆕 new | [5. Mortgage-Servicing Recapture: Better Fair Values or More Unverifiable Optimism?](#i-010) | 4/5 | medium | 2026-10-20 13:23 |
+| I-001 | — | [1. From Tariff Refund Claims to Reported Earnings: Recognition, Classification, and Auditor Coordination](#i-001) | 4/5 | medium | 2026-10-20 09:09 |
+| I-002 | — | [2. The Unexplained Remainder: Residual Aggregation under the New Income Tax Disclosures](#i-002) | 2/5 | medium | 2026-10-20 09:09 |
+| I-003 | — | [3. Quality-Control Compliance Costs and Small-Auditor Client Retention](#i-003) | 4/5 | low | 2026-10-20 09:09 |
+| I-004 | — | [4. Climate Disclosure Retrenchment or Relocation into Financial Reporting?](#i-004) | 2/5 | medium | 2026-10-20 09:09 |
+| I-005 | — | [5. Voluntary Quarterly Disclosure as a Commitment When Mandatory Frequency Is Uncertain](#i-005) | 2/5 | low | 2026-10-20 09:09 |
 
 ## New and updated ideas this run
 
 ---
 
+<a id="i-006"></a>
+### I-006 · 1. What Is Inside Reported Cash? Cash-Equivalent Composition and the Credibility of Corporate Liquidity (🆕 new)
+**Novelty** ★★★★☆ · **Data feasibility** `high` · first seen 2026-10-20 13:23 · last updated 2026-10-20 13:23
+
+> **Research question.** Does separately identifying the composition of cash equivalents improve the informativeness of reported corporate liquidity, and does investors' valuation of cash depend on that composition?
+
+| | |
+|---|---|
+| **What it is** | Construct a reconciliation of reported cash and cash equivalents to separately quantified instrument classes, distinguishing bank deposits, money-market funds, government securities, other instruments, and an unexplained remainder. Test whether composition and reconciliation completeness explain investors' assessments of liquidity beyond the headline balance. The August 2026 taxonomy proposal motivates an immediately feasible baseline study and a prospective regulatory follow-up, not an already-implemented mandatory-disclosure experiment. FASB's project separately addresses significant classes of cash equivalents and digital-asset classification. ([fasb.org](https://fasb.org/projects/fasb-taxonomies/taxonomy-updates-and-news?utm_source=openai)) |
+| **Gap** | 10.1016/j.jacceco.2011.07.001 links general transparency to trading-liquidity uncertainty, while 10.1111/j.1475-679x.2007.00238.x explains information-quality effects on assessed risk. Neither directly evaluates a reconciliation of corporate cash-equivalent instrument classes. 10.2139/ssrn.7470320 studies reserve disclosures by stablecoin issuers, not the liquidity reporting of corporate holders. |
+| **Novel angle** | A dollar-based, auditable composition measure rather than a generic liquidity-disclosure score. Digital assets are an optional subgroup, not an assumed large treated sample. |
+| **Accounting angle** | The question concerns balance-sheet classification, footnote disaggregation, reconciliation completeness, and the decision-usefulness of a prominent accounting aggregate. |
+| **Identification** | Begin with a 2018–2026 firm-year panel and within-firm changes in quantified composition disclosure. Use firm and year effects, matched observations, and controls for actual portfolio changes; describe these estimates as associations because disclosure choice is endogenous. Preregister a conditional future difference-in-differences design comparing firms with large versus small pre-rule disclosure gaps only if a final rule, effective date, and usable post-adoption observations emerge. Do not treat an August taxonomy proposal as an adoption mandate. |
+| **Risks** | Voluntary disclosure is endogenous; instrument classes can overlap across footnotes; cash-equivalent totals are sometimes not separately observable. Ballis et al.'s stablecoin-reserve paper and the FARS paper Corporate Crypto Holdings and Analysts' Forecasting Environment create adjacent overlap. Conference screening was partial, so this is not a novelty clearance. |
+
+**Hypotheses**
+- H1: More complete instrument-class reconciliation is associated with less uncertainty around liquidity-related disclosures, conditional on cash balances and firm fundamentals.
+- H2: The association between reported cash and equity value varies with disclosed instrument composition and accessibility.
+- H3: Incremental disaggregation is more informative when the previously unexplained cash-equivalent remainder is larger.
+
+<details><summary><b>Data plan</b></summary>
+
+- **WRDS:** Compustat North America (Fundamentals Annual/Quarterly), CRSP Stock / Security Files, I/B/E/S, Audit Analytics
+- **Disclosure text:** SEC EDGAR 10-K cash, investments, fair-value, and significant-accounting-policy footnotes, SEC EDGAR 10-Q updates, SEC EDGAR comment letters concerning cash-equivalent classification
+- **Sample:** US domestic public companies with usable 10-K filings, 2018–October 20, 2026. Start with a stratified manual validation sample before full extraction; exclude financial firms from the primary specification and analyze them separately.
+- **Key variables:**
+  - Composition completeness: separately quantified cash-equivalent classes divided by the disclosed cash-equivalent total; construct only when the denominator and mutually exclusive classes are observable.
+  - Unexplained remainder: disclosed cash-equivalent total less identifiable instrument-class amounts; retain measurement-quality flags.
+  - Composition shares: instrument-class amounts divided by the cash-equivalent total; do not infer undisclosed deposits or assume an unexplained remainder is risky.
+  - Outcomes: filing-window absolute abnormal returns, subsequent return volatility, analyst forecast dispersion, and market-value associations with cash balances.
+  - Controls: size, leverage, profitability, cash holdings, investment intensity, industry-year conditions, and observable changes in instrument composition.
+- **EDGAR check:** Query: "cash equivalents" "money market"; forms: 10-K; January 1, 2024–October 20, 2026. Returned 10,000 hits, explicitly a lower-bound/capped result; 98 unique filings in the returned sample. This establishes text availability, not the number of firms with extractable instrument amounts.
+- **Feasibility notes:** All proposed WRDS subscriptions are marked assumed, not confirmed. Free EDGAR supports the core extraction. Cash, cash equivalents, and short-term investments must not be conflated. The current causal-regulation extension is prospective; machine-readable taxonomy changes may mechanically improve tagging without changing economic disclosure.
+
+</details>
+
+<details><summary><b>News triggers</b></summary>
+
+- [XBRL Staff Issues Proposed GAAP Taxonomy Improvements for Proposed Update on Enhanced Disclosures of Cash Equivalents](https://fasb.org/projects/fasb-taxonomies/taxonomy-updates-and-news) — FASB, 2026-08-25
+
+</details>
+
+<details><summary><b>Related papers</b></summary>
+
+- Transparency and liquidity uncertainty in crisis periods (Mark Lang, Mark Maffett, 2011, Journal of Accounting and Economics)
+- Accounting Information, Disclosure, and the Cost of Capital (Richard A. Lambert, Christian Leuz, Robert E. Verrecchia, 2007, Journal of Accounting Research)
+- When Is Private Money Information-Sensitive? Evidence from Stablecoin Reserve Disclosures (Antonis Ballis, Phuong Anh Nguyen, Dimitrios Anastasiou, 2026, SSRN; Swiss Finance Institute Research Paper Series 26-64)
+- Corporate Crypto Holdings and Analysts’ Forecasting Environment (Yi Huang, Adriana Korczak, Nikolaos Tsileponis, 2026, 2026 FARS Midyear Meeting)
+
+</details>
+<details><summary><b>Version history</b></summary>
+
+- 2026-10-20 13:23 — 20261020_132303_open_scan_of_financial_reporting_disclosure_auditi
+
+</details>
+
+---
+
+<a id="i-007"></a>
+### I-007 · 2. Paying the Customer's Customer: Revenue Deductions, Operating Expenses, and Top-Line Comparability (🆕 new)
+**Novelty** ★★★★☆ · **Data feasibility** `medium` · first seen 2026-10-20 13:23 · last updated 2026-10-20 13:23
+
+> **Research question.** Does discretion over payments beyond the immediate customer relationship impair revenue comparability even when operating income and cash flows are unchanged?
+
+| | |
+|---|---|
+| **What it is** | Identify arrangements in which an issuer pays on behalf of its customer or pays its customer's customer, then hand-code whether the payment reduces revenue or enters operating expenses. Test whether economically similar arrangements generate different reported revenue growth and margins, and whether explicit contractual promises explain classification. FASB's August 19, 2026 decisions identify this precise boundary issue; they are tentative decisions rather than current changes to GAAP. ([fasb.org](https://fasb.org/projects/current-projects/consideration-payable-to-a-customer-425308?utm_source=openai)) |
+| **Gap** | 10.2308/tar-2022-0298 studies principal-versus-agent assessments and compliance risk. 10.1111/1911-3846.12775 studies discretion over the timing of multiple-deliverable revenue. These papers do not directly test classification of payments to a customer's customer or payments made on a customer's behalf. |
+| **Novel angle** | Focuses on the identity of the ultimate payment recipient and the contractual promise linking the payment to a sale. Separates presentation-only effects from changes in underlying activity. |
+| **Accounting angle** | This is a revenue-measurement and presentation question involving the boundary between consideration payable to a customer and a separately purchased service. |
+| **Identification** | First estimate matched-arrangement comparisons within narrow business models, controlling for payment purpose and contractual substance. Reconstruct presentation-neutral revenue and expense measures only where disclosed amounts permit it. Treat current results as descriptive or associational. If guidance is finalized, use pre-announcement contractual exposure and classification practice to define treatment intensity in a future event-study/DiD design; early adoption would require explicit selection analysis. |
+| **Risks** | The directly exposed sample could be much smaller than the EDGAR hit count. Contractual differences may justify different accounting, so classification dispersion alone is not evidence of manipulation. Du et al. provide a close methodological precedent. Distinguish this project from the separate 2025 share-based-consideration standard. |
+
+**Hypotheses**
+- H1: Similar indirect-customer payment arrangements exhibit economically meaningful variation between revenue deductions and operating-expense presentation.
+- H2: Classification differences explain reported revenue-growth and margin differences more strongly than operating-income or cash-flow differences.
+- H3: More explicit contractual promises are associated with less classification dispersion and fewer classification-related SEC inquiries.
+
+<details><summary><b>Data plan</b></summary>
+
+- **WRDS:** Compustat North America (Fundamentals Annual/Quarterly), CRSP Stock / Security Files, I/B/E/S, Audit Analytics
+- **Disclosure text:** SEC EDGAR revenue-recognition and customer-incentive footnotes, SEC EDGAR 10-K and 10-Q discussion of rebates, incentives, and indirect-customer payments, SEC EDGAR exhibits containing relevant commercial agreements, SEC EDGAR revenue-classification comment letters
+- **Sample:** US issuers with relevant arrangements, 2018–October 20, 2026; subsequent adoption analysis conditional on final guidance. Begin with platforms, intermediaries, and distribution-intensive businesses, but determine inclusion from contracts rather than industry labels.
+- **Key variables:**
+  - Exposure: pre-August 19, 2026 disclosure of payments to a customer's customer or payments made on a customer's behalf, manually distinguished from ordinary direct rebates.
+  - Classification: reduction of revenue, operating expense, mixed treatment, or indeterminate.
+  - Contract linkage: explicit promise, disclosed implicit expectation, separately identifiable service, and ultimate recipient.
+  - Presentation-neutral measures: reconstructed revenue growth and expense ratios only for observations with quantified payments and an unambiguous accounting bridge.
+  - Outcomes: revenue forecast errors, cross-firm margin dispersion, relevant comment letters, audit fees, and classification-related CAMs.
+  - Controls: size, profitability, sales growth, acquisitions, business model, and direct-customer incentive exposure.
+- **EDGAR check:** Query: "consideration payable" "customer"; forms: 10-K,10-Q; January 1, 2024–October 20, 2026. Returned 4,495 hits; 99 unique filings in the returned sample. Hits are broad screening evidence and do not establish the size of the indirect-customer subgroup.
+- **Feasibility notes:** WRDS access is assumed. The critical subgroup requires substantial manual screening; many phrase hits concern direct-customer payments or unrelated uses of consideration. Quantified payment amounts may be unavailable. No final standard or mandatory treatment date is assumed.
+
+</details>
+
+<details><summary><b>News triggers</b></summary>
+
+- [FASB adds Consideration Payable to a Customer project and completes initial deliberations](https://fasb.org/projects/current-projects/consideration-payable-to-a-customer-425308) — FASB, 2026-08-19
+
+</details>
+
+<details><summary><b>Related papers</b></summary>
+
+- Principal-versus-Agent Considerations in Revenue Recognition Under ASC 606 and Compliance Risk (Kai Du, Henock Louis, Brent A. Schmidt, 2026, The Accounting Review)
+- The Impact of Managerial Discretion in Revenue Recognition: A Reexamination (Linda A. Myers, Roy Schmardebeck, Timothy A. Seidel, 2022, Contemporary Accounting Research)
+
+</details>
+<details><summary><b>Version history</b></summary>
+
+- 2026-10-20 13:23 — 20261020_132303_open_scan_of_financial_reporting_disclosure_auditi
+
+</details>
+
+---
+
+<a id="i-008"></a>
+### I-008 · 3. Cyber Materiality Labels versus Realized Accounting Losses (🆕 new)
+**Novelty** ★★☆☆☆ · **Data feasibility** `medium` · first seen 2026-10-20 13:23 · last updated 2026-10-20 13:23
+
+> **Research question.** How informative are initial cyber-incident materiality assessments about subsequent financial-statement consequences, and when do assessment-to-outcome discrepancies lead to auditor or control-reporting responses?
+
+| | |
+|---|---|
+| **What it is** | Follow disclosed cybersecurity incidents from their initial 8-K item and materiality language through subsequent recognized expenses, insurance recoveries, operational disruptions, and control disclosures. Evaluate whether an initially nonmaterial or unresolved assessment predicts later accounting consequences and whether auditor reporting changes when the assessment and realized consequences diverge. The October 2, 2026 industry letter motivates the policy question but is advocacy, not evidence that disclosure requirements were repealed. ([sec.gov](https://www.sec.gov/comments/CLL-15/cll15-1082159-3759646.pdf?utm_source=openai)) |
+| **Gap** | 10.1287/mnsc.2023.01058 documents potential manipulation of incident discovery dates. 10.2139/ssrn.7397253 examines annual Item 1C governance and materiality disclosures. The conference paper Shifts in Cybersecurity Breach Disclosure Following SEC Item 1.05 overlaps directly with filing-channel choice. The proposed contribution therefore excludes a standalone study of channel substitution and instead examines the incident-to-recognition-to-audit sequence. |
+| **Novel angle** | A validated incident-level accounting ledger that separates gross costs, insurance recoveries, recognized versus estimated amounts, and revisions to prior assessments. A subsequent loss is not automatically coded as evidence that an earlier assessment was wrong. |
+| **Accounting angle** | Connects event disclosure to recognized losses, recoveries, estimates, disclosure controls, internal control over financial reporting, and audit reporting. |
+| **Identification** | Use incident-level predictive validation and within-issuer comparisons where repeated incidents exist. Define assessment revisions separately from realizations caused by genuinely new information. Estimate matched incident panels using initial disclosed severity, operating disruption, and firm characteristics. Do not interpret filing under Item 8.01 versus Item 1.05 as randomly assigned, and do not use the CTIA letter as an exogenous regulatory shock. |
+| **Risks** | High scoop risk: Badger, Binkley, and Arthur's conference paper already studies shifts following Item 1.05; its full manuscript was not obtained. Badger et al.'s Item 1C working paper is also close. Selection into disclosure, incomplete loss measurement, hindsight bias, and a small number of audit-reporting changes are major threats. Obtain both manuscripts before committing. |
+
+**Hypotheses**
+- H1: Initial materiality language predicts subsequent quantified financial consequences, but predictive accuracy varies with estimation uncertainty.
+- H2: Weak disclosure controls are associated with larger subsequent revisions to initially disclosed financial-impact estimates.
+- H3: Unexpectedly large subsequent consequences are associated with additional control reporting or audit attention, conditional on incident severity.
+
+<details><summary><b>Data plan</b></summary>
+
+- **WRDS:** Compustat North America (Fundamentals Annual/Quarterly), CRSP Stock / Security Files, Audit Analytics
+- **Disclosure text:** SEC EDGAR 8-K Items 1.05, 8.01, and 7.01 and amendments, SEC EDGAR 10-K Item 1C, Item 9A, loss-contingency and insurance footnotes, SEC EDGAR 10-Q incident-cost updates and auditor-report CAMs
+- **Sample:** Incidents disclosed by US domestic issuers from December 18, 2023 through October 20, 2026. Primary realization tests require a fixed follow-up horizon; recent incidents enter only descriptive analyses until sufficient follow-up exists.
+- **Key variables:**
+  - Initial assessment: material, not material, unresolved, or no explicit assessment; record the filing item separately.
+  - Accounting consequences: incident-specific recognized expense, impairment, liability, and insurance recovery amounts; avoid summing repeated cumulative disclosures.
+  - Revision: changes to explicit prior financial-impact estimates, with a separate new-information flag.
+  - Audit/control outcomes: cyber- or IT-related material weaknesses, audit-report lag, audit fees, and incident-related CAM language.
+  - Prediction outcomes: out-of-sample classification and amount-prediction performance, evaluated against subsequent disclosed consequences rather than an unobservable complete-loss measure.
+  - Controls: initial operating disruption, size, industry, prior incidents, profitability, leverage, and pre-existing control weaknesses.
+- **EDGAR check:** Query: "cybersecurity incident"; forms: 8-K; December 18, 2023–October 20, 2026. Returned 1,177 hits; 91 unique filings in the returned sample. Amendments, exhibits, and repeated incident updates require deduplication.
+- **Feasibility notes:** WRDS access is assumed. EDGAR supplies a feasible incident universe, but quantified costs and recoveries are selectively disclosed. Do not code nondisclosure as zero loss. Public filings cannot identify all undisclosed incidents, and October 2026 incidents are right-censored.
+
+</details>
+
+<details><summary><b>News triggers</b></summary>
+
+- [CTIA requests reform of cybersecurity disclosures in comment on Reforming Regulation S-K](https://www.sec.gov/comments/CLL-15/cll15-1082159-3759646.pdf) — CTIA comment letter filed with the SEC, 2026-10-02
+
+</details>
+
+<details><summary><b>Related papers</b></summary>
+
+- Timely Cybersecurity Disclosure and Information Manipulation (Xuanpu Lin, Guoman She, 2025, Management Science)
+- Fortifying the Nonbreached: Auditors’ Role in Cybersecurity Risk Management (Xiaomeng Charlene Chen, Jengfang Chen, Rongrong Chen, 2025, Auditing: A Journal of Practice & Theory)
+- Cybersecurity Risk Governance and Materiality Assessments in Item 1C Disclosures (Jack Badger, Marcy Binkley, Deanie Chaudoin, 2026, SSRN)
+- Shifts in Cybersecurity Breach Disclosure Following SEC Item 1.05 (Jack Badger, Marcy Binkley, Jacob Arthur, 2026, 2026 AAA AIS/SET Meeting)
+
+</details>
+<details><summary><b>Version history</b></summary>
+
+- 2026-10-20 13:23 — 20261020_132303_open_scan_of_financial_reporting_disclosure_auditi
+
+</details>
+
+---
+
+<a id="i-009"></a>
+### I-009 · 4. From Carbon-Intensity Evidence to Recognized Tax Credits: Section 45Z Verification and Earnings (🆕 new)
+**Novelty** ★★★★☆ · **Data feasibility** `medium` · first seen 2026-10-20 13:23 · last updated 2026-10-20 13:23
+
+> **Research question.** Does verifiability of emissions inputs constrain recognition of clean-fuel credits, and does stronger substantiation reduce subsequent accounting revisions?
+
+| | |
+|---|---|
+| **What it is** | Study whether the availability of substantiating emissions evidence affects the timing, estimation, and presentation of Section 45Z benefits. Build a project-to-disclosure ledger recording credit estimates, recognized benefits, receivables, transfers, and subsequent revisions. Notice 2026-53 supplies a concrete verification setting through emissions-rate guidance, agricultural-practice provisions, and manure-specific substantiation requirements; it does not establish a universal recognition date for financial reporting. ([irs.gov](https://www.irs.gov/newsroom/irs-issues-notice-on-45z-clean-fuel-production-tax-credit-to-support-domestic-biofuel-production-and-american-agriculture?trk=article-ssr-frontend-pulse_little-text-block&utm_source=openai)) |
+| **Gap** | 10.1007/s11142-025-09914-3 shows that narrative disclosures predict tax outcomes. 10.1007/s11142-025-09884-6 studies consequences of tax KAMs for tax-attribute valuation and auditor-provided tax services. Neither directly traces how technical emissions substantiation translates into recognition and realization of transferable clean-fuel benefits. |
+| **Novel angle** | Links engineering-verification disclosures to accounting recognition milestones. Classify each issuer's stated accounting policy before choosing outcomes; do not presume every 45Z benefit appears in income-tax expense. |
+| **Accounting angle** | Examines financial reporting for tax-related government benefits, accounting-policy choice, estimation uncertainty, recoverability, and auditability—not simply whether tax incentives increase investment. |
+| **Identification** | Use the September 8, 2026 notice as an information milestone, interacted with project pathways and unresolved-methodology exposure identified from pre-notice filings. Compare affected and less-affected pathways within issuers where possible. Because pathway selection and eligibility economics are endogenous, present initial estimates as differential information responses rather than clean causal accounting effects. Separate changes in credit entitlement from changes in measurement certainty; use exact inference or descriptive comparative cases if the issuer count is small. |
+| **Risks** | Small treated sample, selective project disclosure, simultaneous changes in entitlement and verifiability, and heterogeneous accounting policies. The specific agronomic substantiation needed for a strong mechanism test may be absent from public filings. Broad SSRN results were weakly relevant, so novelty remains provisional. |
+
+**Hypotheses**
+- H1: Issuers disclosing stronger substantiation of relevant emissions inputs recognize less uncertain credit amounts and subsequently revise them less.
+- H2: Guidance resolution is associated with larger recognition updates for projects whose previously disclosed estimates depended on unresolved methodologies.
+- H3: More complete recognition-to-transfer reconciliations improve the predictability of subsequent reported cash realization.
+
+<details><summary><b>Data plan</b></summary>
+
+- **WRDS:** Compustat North America (Fundamentals Annual/Quarterly), CRSP Stock / Security Files, Audit Analytics
+- **Disclosure text:** SEC EDGAR 10-K and 10-Q disclosures mentioning Section 45Z, SEC EDGAR income-tax, government-assistance, receivable, and accounting-policy footnotes, SEC EDGAR 8-K earnings releases and disclosed credit-transfer agreements
+- **Sample:** US public issuers disclosing actual or expected Section 45Z exposure, 2024–October 20, 2026; follow-up recognition and realization tests require later filings. Count distinct issuers and projects before selecting an archival versus comparative-case design.
+- **Key variables:**
+  - Predetermined exposure: disclosed project feedstock/pathway and dependence on unresolved emissions methodologies before September 8, 2026.
+  - Substantiation: explicit discussion of certification, lifecycle-model inputs, agricultural-practice evidence, or farm-specific records; distinguish evidence possession from generic compliance language.
+  - Recognition ledger: benefit recognized, statement location, credit receivable, amounts transferred, cash collected, and valuation adjustments, only where separately disclosed.
+  - Revisions: changes in estimated credit amounts with disclosed reasons; separate policy changes, production changes, price changes, and methodology updates.
+  - Controls: production or project scale where disclosed, profitability, leverage, liquidity, and other energy-credit exposure.
+- **EDGAR check:** Query: "45Z"; forms: 10-K,10-Q; January 1, 2024–October 20, 2026. Returned 152 hits; 93 unique filings in the returned sample. These are filings, not 93 firms; sample hits include repeated issuers and exhibits.
+- **Feasibility notes:** WRDS access is assumed. The number of independently treated issuers may be small, and pathway-level amounts may not be disclosed. Third-quarter 2026 reporting is largely not yet available at the cutoff. Do not promise a completed post-notice panel or infer private transfer prices.
+
+</details>
+
+<details><summary><b>News triggers</b></summary>
+
+- [IRS issues notice on 45Z Clean Fuel Production Tax Credit to support domestic biofuel production and American agriculture](https://www.irs.gov/newsroom/irs-issues-notice-on-45z-clean-fuel-production-tax-credit-to-support-domestic-biofuel-production-and-american-agriculture) — IRS, 2026-09-08
+
+</details>
+
+<details><summary><b>Related papers</b></summary>
+
+- Using narrative disclosures to predict tax outcomes (Olga Bogachek, Antonio De Vito, Paul Demeré, 2025, Review of Accounting Studies; online publication 2025, volume 31 in 2026)
+- The consequences of expanded audit reporting: implications of tax key audit matters for tax attribute valuation and auditor-provided tax services (Daniel P. Lynch, Aaron J. Mandell, Linette M. Rousseau, 2025, Review of Accounting Studies)
+
+</details>
+<details><summary><b>Version history</b></summary>
+
+- 2026-10-20 13:23 — 20261020_132303_open_scan_of_financial_reporting_disclosure_auditi
+
+</details>
+
+---
+
+<a id="i-010"></a>
+### I-010 · 5. Mortgage-Servicing Recapture: Better Fair Values or More Unverifiable Optimism? (🆕 new)
+**Novelty** ★★★★☆ · **Data feasibility** `medium` · first seen 2026-10-20 13:23 · last updated 2026-10-20 13:23
+
+> **Research question.** When does including expected recapture improve the predictive validity of mortgage-servicing-right fair values, and when does it mainly expand managerial discretion?
+
+| | |
+|---|---|
+| **What it is** | Compare mortgage-servicing-right valuations across issuers that explicitly include recapture, explicitly exclude it, or do not explain their practice. Examine whether disclosed recapture assumptions predict subsequent servicing retention and fee income, and whether they improve valuation comparability or introduce optimistic discretion. The September 23, 2026 proposal would include recapture in measurement, but a mandatory-adoption study is not yet available. ([journalofaccountancy.com](https://www.journalofaccountancy.com/news/2026/sep/fasb-proposes-update-to-residential-mortgage-servicing-rights-guidance/?utm_source=openai)) |
+| **Gap** | 10.1007/s11142-013-9234-y directly compares managerial and market inputs in MSR valuations. 10.1007/s11142-026-09949-0 examines incentives behind sticky Level 3 valuations in mutual funds. Neither specifically tests recapture inclusion and the measurement-versus-disclosure trade-off in the 2026 MSR proposal. |
+| **Novel angle** | An assumption-level validation of recapture, not a generic Level 3 valuation study. Distinguishes existing economic recapture capability from the accounting decision to include its value. |
+| **Accounting angle** | A fair-value measurement, unit-of-account, estimation-disclosure, and auditing question concerning an identifiable Level 3 asset. |
+| **Identification** | Start with a longitudinal descriptive/predictive design using pre-proposal policy classifications and within-issuer assumption changes. Hold out future observations for validation and control for contemporaneously disclosed prepayment, discount-rate, and portfolio changes. A future adoption design would interact pre-rule exclusion practices with final implementation, but would require sufficient independent issuers and controls for refinancing conditions. Do not impose a treatment date or effective date absent final guidance. |
+| **Risks** | A small, concentrated sample; changing refinancing economics; acquisitions; and limited observation of recapture assumptions threaten identification. Altamuro and Zhang is a very close asset-setting precedent. Much existing practice may already incorporate recapture, leaving little measurement treatment. |
+
+**Hypotheses**
+- H1: Explicitly disclosed recapture assumptions improve prediction of subsequent retained servicing and servicing-fee income when supported by observable historical performance.
+- H2: Unsupported recapture assumptions are associated with more subsequent downward valuation revisions.
+- H3: Harmonized measurement improves comparability less when recapture assumptions remain undisclosed.
+
+<details><summary><b>Data plan</b></summary>
+
+- **WRDS:** Compustat North America (Fundamentals Annual/Quarterly), CRSP Stock / Security Files, Audit Analytics
+- **Disclosure text:** SEC EDGAR MSR fair-value, impairment, and sensitivity footnotes, SEC EDGAR servicing-portfolio and refinancing-retention disclosures, SEC EDGAR auditor reports and MSR-related CAMs, SEC EDGAR transition disclosures if final guidance is adopted later
+- **Sample:** US listed banks, mortgage companies, and mortgage REITs with material residential MSRs, 2018–October 20, 2026. Analyze entity types separately and first establish the number of independent issuers with observable accounting-policy variation.
+- **Key variables:**
+  - Recapture policy: explicitly included, explicitly excluded, implicit/unclear, or not discussed; do not equate no discussion with exclusion.
+  - Valuation: MSR carrying value and fair value relative to unpaid principal balance or servicing fees, where available.
+  - Assumptions: recapture rates, prepayment speeds, discount rates, servicing costs, and sensitivity disclosures.
+  - Validation outcomes: subsequent disclosed retained servicing, recapture activity, servicing fees, impairment, and valuation revisions.
+  - Audit outcomes: MSR CAM specificity, audit fees, and valuation-related control disclosures.
+  - Controls: portfolio size and composition, disclosed refinancing conditions, hedging results, and servicing acquisitions or sales.
+- **EDGAR check:** Query: "mortgage servicing rights" "recapture"; forms: 10-K,10-Q; January 1, 2024–October 20, 2026. Returned 520 hits; 98 unique filings in the returned sample. Repeated PennyMac and other servicer filings indicate concentration, not 98 independent firms.
+- **Feasibility notes:** WRDS access is assumed. Free filings contain relevant disclosures, but the independently treated issuer count and explicit recapture assumptions may be limited. The proposal does not establish an effective date. No new recurring recapture-specific disclosure is assumed.
+
+</details>
+
+<details><summary><b>News triggers</b></summary>
+
+- [FASB proposes update to residential mortgage servicing rights guidance](https://www.journalofaccountancy.com/news/2026/sep/fasb-proposes-update-to-residential-mortgage-servicing-rights-guidance/) — Journal of Accountancy, 2026-09-23
+- [XBRL Staff Issues Proposed GAAP Taxonomy Improvements for Proposed Update on Mortgage Servicing Rights - Recapture](https://fasb.org/projects/fasb-taxonomies/taxonomy-updates-and-news) — FASB, 2026-09-23
+
+</details>
+
+<details><summary><b>Related papers</b></summary>
+
+- The financial reporting of fair value based on managerial inputs versus market inputs: evidence from mortgage servicing rights (Jennifer Altamuro, Haiwen Zhang, 2013, Review of Accounting Studies)
+- Why are reported fair values sticky? (Paul Fischer, David Haushalter, Brian Miller, 2026, Review of Accounting Studies)
+
+</details>
+<details><summary><b>Version history</b></summary>
+
+- 2026-10-20 13:23 — 20261020_132303_open_scan_of_financial_reporting_disclosure_auditi
+
+</details>
+
+## Earlier ideas
+
 <a id="i-001"></a>
-### I-001 · 1. From Tariff Refund Claims to Reported Earnings: Recognition, Classification, and Auditor Coordination (🆕 new)
+<details><summary><b>I-001 · 1. From Tariff Refund Claims to Reported Earnings: Recognition, Classification, and Auditor Coordination</b></summary>
+
 **Novelty** ★★★★☆ · **Data feasibility** `medium` · first seen 2026-10-20 09:09 · last updated 2026-10-20 09:09
 
 > **Research question.** How do verification milestones and auditor coordination affect the timing and income-statement classification of tariff refund recognition?
@@ -74,10 +368,11 @@ _Run 2026-10-20 09:09 · topic: Open scan of financial reporting, disclosure, au
 
 </details>
 
----
+</details>
 
 <a id="i-002"></a>
-### I-002 · 2. The Unexplained Remainder: Residual Aggregation under the New Income Tax Disclosures (🆕 new)
+<details><summary><b>I-002 · 2. The Unexplained Remainder: Residual Aggregation under the New Income Tax Disclosures</b></summary>
+
 **Novelty** ★★☆☆☆ · **Data feasibility** `medium` · first seen 2026-10-20 09:09 · last updated 2026-10-20 09:09
 
 > **Research question.** Does residual aggregation under ASU 2023-09 obscure the connection between tax expense, jurisdictional tax effects, and cash taxes paid?
@@ -137,10 +432,11 @@ _Run 2026-10-20 09:09 · topic: Open scan of financial reporting, disclosure, au
 
 </details>
 
----
+</details>
 
 <a id="i-003"></a>
-### I-003 · 3. Quality-Control Compliance Costs and Small-Auditor Client Retention (🆕 new)
+<details><summary><b>I-003 · 3. Quality-Control Compliance Costs and Small-Auditor Client Retention</b></summary>
+
 **Novelty** ★★★★☆ · **Data feasibility** `low` · first seen 2026-10-20 09:09 · last updated 2026-10-20 09:09
 
 > **Research question.** Do fixed quality-control implementation costs cause small auditors to raise fees, shed clients, or exit issuer auditing, and do cost-reducing amendments mitigate those responses?
@@ -195,10 +491,11 @@ _Run 2026-10-20 09:09 · topic: Open scan of financial reporting, disclosure, au
 
 </details>
 
----
+</details>
 
 <a id="i-004"></a>
-### I-004 · 4. Climate Disclosure Retrenchment or Relocation into Financial Reporting? (🆕 new)
+<details><summary><b>I-004 · 4. Climate Disclosure Retrenchment or Relocation into Financial Reporting?</b></summary>
+
 **Novelty** ★★☆☆☆ · **Data feasibility** `medium` · first seen 2026-10-20 09:09 · last updated 2026-10-20 09:09
 
 > **Research question.** Does reduced expected climate-specific regulation change where financially material climate information appears, rather than only how much climate language firms use?
@@ -254,10 +551,11 @@ _Run 2026-10-20 09:09 · topic: Open scan of financial reporting, disclosure, au
 
 </details>
 
----
+</details>
 
 <a id="i-005"></a>
-### I-005 · 5. Voluntary Quarterly Disclosure as a Commitment When Mandatory Frequency Is Uncertain (🆕 new)
+<details><summary><b>I-005 · 5. Voluntary Quarterly Disclosure as a Commitment When Mandatory Frequency Is Uncertain</b></summary>
+
 **Novelty** ★★☆☆☆ · **Data feasibility** `low` · first seen 2026-10-20 09:09 · last updated 2026-10-20 09:09
 
 > **Research question.** Which firms voluntarily commit to quarterly information production when mandatory reporting frequency may decline, and how credible are those commitments?
@@ -311,5 +609,7 @@ _Run 2026-10-20 09:09 · topic: Open scan of financial reporting, disclosure, au
 <details><summary><b>Version history</b></summary>
 
 - 2026-10-20 09:09 — 20261020_090932_open_scan_of_financial_reporting_disclosure_auditi
+
+</details>
 
 </details>

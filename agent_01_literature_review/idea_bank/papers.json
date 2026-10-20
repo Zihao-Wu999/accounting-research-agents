@@ -395,5 +395,354 @@
     "theories": [],
     "relevance_score": 5,
     "last_seen": "2026-10-20 09:09"
+  },
+  "10.1111/j.1475-679x.2007.00238.x": {
+    "paper_id": "10.1111/j.1475-679x.2007.00238.x",
+    "title": "Accounting Information, Disclosure, and the Cost of Capital",
+    "authors": [
+      "Richard A. Lambert",
+      "Christian Leuz",
+      "Robert E. Verrecchia"
+    ],
+    "year": 2007,
+    "venue": "Journal of Accounting Research",
+    "status": "published",
+    "source": "OpenAlex journal search; publisher abstract cross-check",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1475-679X.2007.00238.x",
+    "research_question": "How can accounting information affect the cost of capital despite diversification?",
+    "sample": "Theoretical model; no empirical sample.",
+    "datasets": [],
+    "identification": "CAPM-consistent model with correlated firm cash flows.",
+    "main_findings": "Information quality affects assessed cash-flow covariances and real decisions; the latter effect can operate in either direction. ([onlinelibrary.wiley.com](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1475-679X.2007.00238.x?utm_source=openai))",
+    "theories": [
+      "Information risk",
+      "Asset pricing with correlated cash flows"
+    ],
+    "relevance_score": 3,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.1016/j.jacceco.2011.07.001": {
+    "paper_id": "10.1016/j.jacceco.2011.07.001",
+    "title": "Transparency and liquidity uncertainty in crisis periods",
+    "authors": [
+      "Mark Lang",
+      "Mark Maffett"
+    ],
+    "year": 2011,
+    "venue": "Journal of Accounting and Economics",
+    "status": "published",
+    "source": "OpenAlex journal search; ScienceDirect abstract and introduction",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0165410111000553",
+    "research_question": "Does transparency reduce liquidity variability and commonality, particularly in crises?",
+    "sample": "Global sample covering 37 countries; period and observation count not stated in abstract.",
+    "datasets": [],
+    "identification": "Cross-sectional and panel analyses with sensitivity tests, endogeneity controls, and propensity matching; not a randomized design.",
+    "main_findings": "More transparent firms have less liquidity volatility, fewer extreme illiquidity events, and lower liquidity correlations, particularly during crises. ([sciencedirect.com](https://www.sciencedirect.com/science/article/pii/S0165410111000553?utm_source=openai))",
+    "theories": [
+      "Information asymmetry",
+      "Funding liquidity and flight to quality"
+    ],
+    "relevance_score": 3,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.2139/ssrn.7470320": {
+    "paper_id": "10.2139/ssrn.7470320",
+    "title": "When Is Private Money Information-Sensitive? Evidence from Stablecoin Reserve Disclosures",
+    "authors": [
+      "Antonis Ballis",
+      "Phuong Anh Nguyen",
+      "Dimitrios Anastasiou",
+      "Steven Ongena"
+    ],
+    "year": 2026,
+    "venue": "SSRN; Swiss Finance Institute Research Paper Series 26-64",
+    "status": "working_paper",
+    "source": "OpenAlex SSRN search; RePEc abstract cross-check",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7470320",
+    "research_question": "When do stablecoin reserve attestations reveal price-relevant information?",
+    "sample": "116 reserve attestations by Tether and Circle, 2018–2026, according to the indexed abstract.",
+    "datasets": [
+      "Hand-collected stablecoin reserve attestations"
+    ],
+    "identification": "Disclosure-event panel with date and asset fixed effects.",
+    "main_findings": "The indexed abstract reports different peg responses across disclosure content and issuers. The primary SSRN abstract was not retrieved, so this is an overlap alert rather than a foundation for the proposed hypotheses.",
+    "theories": [
+      "Information sensitivity of private money"
+    ],
+    "relevance_score": 3,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting/Program#corporate-crypto-holdings": {
+    "paper_id": "https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting/Program#corporate-crypto-holdings",
+    "title": "Corporate Crypto Holdings and Analysts’ Forecasting Environment",
+    "authors": [
+      "Yi Huang",
+      "Adriana Korczak",
+      "Nikolaos Tsileponis"
+    ],
+    "year": 2026,
+    "venue": "2026 FARS Midyear Meeting",
+    "status": "conference",
+    "source": "Official AAA conference program; fragment is a local disambiguator, not a verified page anchor",
+    "url": "https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting/Program",
+    "research_question": "Corporate crypto holdings and the analyst forecasting environment; precise question not stated in abstract.",
+    "sample": "Not stated in abstract; conference program provides no abstract.",
+    "datasets": [],
+    "identification": "Not stated in abstract.",
+    "main_findings": "Not stated in abstract; only title, authors, and presentation listing verified. ([aaahq.org](https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting/Program))",
+    "theories": [],
+    "relevance_score": 3,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.2308/tar-2022-0298": {
+    "paper_id": "10.2308/tar-2022-0298",
+    "title": "Principal-versus-Agent Considerations in Revenue Recognition Under ASC 606 and Compliance Risk",
+    "authors": [
+      "Kai Du",
+      "Henock Louis",
+      "Brent A. Schmidt",
+      "Shuyang Wang"
+    ],
+    "year": 2026,
+    "venue": "The Accounting Review",
+    "status": "published",
+    "source": "OpenAlex journal search; author-posted SSRN abstract and faculty publication list cross-check",
+    "url": "https://doi.org/10.2308/tar-2022-0298",
+    "research_question": "How do principal-versus-agent assessments affect compliance risk, and does ASC 606 change that relationship?",
+    "sample": "Textually constructed and manually collected firm sample around ASC 606; exact period and size not stated in abstract.",
+    "datasets": [],
+    "identification": "Comparison of principal-versus-agent-exposed firms before and after ASC 606.",
+    "main_findings": "Exposed firms have greater revenue-comment-letter and audit-fee differences before ASC 606; those differences decline after adoption. ([papers.ssrn.com](https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4111573_code371540.pdf?abstractid=4111573&utm_source=openai))",
+    "theories": [
+      "Compliance risk",
+      "Information-processing costs"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.1111/1911-3846.12775": {
+    "paper_id": "10.1111/1911-3846.12775",
+    "title": "The Impact of Managerial Discretion in Revenue Recognition: A Reexamination",
+    "authors": [
+      "Linda A. Myers",
+      "Roy Schmardebeck",
+      "Timothy A. Seidel",
+      "Michael D. Stuart"
+    ],
+    "year": 2022,
+    "venue": "Contemporary Accounting Research",
+    "status": "published",
+    "source": "OpenAlex journal search",
+    "url": "https://doi.org/10.1111/1911-3846.12775",
+    "research_question": "Does increased discretion over multiple-deliverable revenue improve relevance at the expense of faithful representation?",
+    "sample": "Firms affected by ASU 2009-13 and ASU 2009-14; exact period and size not stated in abstract.",
+    "datasets": [],
+    "identification": "Analysis around adoption of standards increasing revenue-recognition discretion.",
+    "main_findings": "The abstract reports increased revenue relevance without reduced faithful representation overall; opaque adopters exhibit more opportunistic acceleration when incentives are high.",
+    "theories": [
+      "Managerial discretion",
+      "Relevance versus faithful representation"
+    ],
+    "relevance_score": 3,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.1287/mnsc.2023.01058": {
+    "paper_id": "10.1287/mnsc.2023.01058",
+    "title": "Timely Cybersecurity Disclosure and Information Manipulation",
+    "authors": [
+      "Xuanpu Lin",
+      "Guoman She"
+    ],
+    "year": 2025,
+    "venue": "Management Science",
+    "status": "published",
+    "source": "OpenAlex journal search; publisher-page cross-check",
+    "url": "https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2023.01058",
+    "research_question": "Do firms strategically report incident discovery dates to postpone cybersecurity disclosure?",
+    "sample": "Cybersecurity incidents and associated insider trading; exact period and size not stated in abstract.",
+    "datasets": [],
+    "identification": "Patterns in insider sales around reported discovery dates, with control-quality, litigation-risk, and deadline-pressure comparisons.",
+    "main_findings": "The abstract reports suggestive evidence of strategic discovery-date reporting, more prevalent under weak controls, low litigation risk, and deadline pressure. Remediation disclosures mitigate market reactions. ([pubsonline.informs.org](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2023.01058?utm_source=openai))",
+    "theories": [
+      "Strategic disclosure",
+      "Disclosure deadline incentives"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.2308/ajpt-2024-124": {
+    "paper_id": "10.2308/ajpt-2024-124",
+    "title": "Fortifying the Nonbreached: Auditors’ Role in Cybersecurity Risk Management",
+    "authors": [
+      "Xiaomeng Charlene Chen",
+      "Jengfang Chen",
+      "Rongrong Chen",
+      "Mostafa Monzur Hasan",
+      "Xiaoyue Zhang"
+    ],
+    "year": 2025,
+    "venue": "Auditing: A Journal of Practice & Theory",
+    "status": "published",
+    "source": "OpenAlex journal search",
+    "url": "https://doi.org/10.2308/ajpt-2024-124",
+    "research_question": "Does auditor experience with breached clients change oversight of nonbreached clients?",
+    "sample": "Nonbreached audit clients linked to auditors' breach experience; exact period and size not stated in abstract.",
+    "datasets": [],
+    "identification": "Cross-client comparisons based on auditor breach experience, supplemented by interviews.",
+    "main_findings": "Breach-experienced auditors issue more material-weakness opinions, improve cyber-risk disclosures, and issue clean opinions associated with fewer subsequent breaches, according to the abstract.",
+    "theories": [
+      "Cross-client learning",
+      "Adaptive audit risk assessment"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.2139/ssrn.7397253": {
+    "paper_id": "10.2139/ssrn.7397253",
+    "title": "Cybersecurity Risk Governance and Materiality Assessments in Item 1C Disclosures",
+    "authors": [
+      "Jack Badger",
+      "Marcy Binkley",
+      "Deanie Chaudoin",
+      "Travis Foshag"
+    ],
+    "year": 2026,
+    "venue": "SSRN",
+    "status": "working_paper",
+    "source": "OpenAlex SSRN search; primary SSRN abstract",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7397253",
+    "research_question": "How do Item 1C disclosure characteristics vary with firms' cybersecurity-risk materiality assessments?",
+    "sample": "4,862 10-K filings in the authors' first-year XBRL-tagged disclosure sample; 1,076 disclose an assessment process and 322 assess cyber risk as material.",
+    "datasets": [
+      "SEC EDGAR 10-K Item 1C disclosures"
+    ],
+    "identification": "Cross-sectional textual comparisons; not a causal mandate design.",
+    "main_findings": "Material-risk assessments are associated with fewer disclosed governance features and longer, more negative, more litigious language. The authors also report a negative association between disclosure quality and strong governance. ([papers.ssrn.com](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7397253&utm_source=openai))",
+    "theories": [],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "https://aaahq.org/Meetings/2026/AIS-SET/Program#shifts-cybersecurity-breach-disclosure": {
+    "paper_id": "https://aaahq.org/Meetings/2026/AIS-SET/Program#shifts-cybersecurity-breach-disclosure",
+    "title": "Shifts in Cybersecurity Breach Disclosure Following SEC Item 1.05",
+    "authors": [
+      "Jack Badger",
+      "Marcy Binkley",
+      "Jacob Arthur"
+    ],
+    "year": 2026,
+    "venue": "2026 AAA AIS/SET Meeting",
+    "status": "conference",
+    "source": "Official AAA conference program; fragment is a local disambiguator, not a verified page anchor",
+    "url": "https://aaahq.org/Meetings/2026/AIS-SET/Program",
+    "research_question": "Changes in breach disclosure following Item 1.05; precise question not stated in abstract.",
+    "sample": "Not stated in abstract; program listing only.",
+    "datasets": [],
+    "identification": "Not stated in abstract.",
+    "main_findings": "Not stated in abstract. The title and authors establish a direct overlap warning for filing-channel research. ([aaahq.org](https://aaahq.org/Meetings/2026/AIS-SET/Program))",
+    "theories": [],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.1007/s11142-025-09914-3": {
+    "paper_id": "10.1007/s11142-025-09914-3",
+    "title": "Using narrative disclosures to predict tax outcomes",
+    "authors": [
+      "Olga Bogachek",
+      "Antonio De Vito",
+      "Paul Demeré",
+      "Francesco Grossetti"
+    ],
+    "year": 2025,
+    "venue": "Review of Accounting Studies; online publication 2025, volume 31 in 2026",
+    "status": "published",
+    "source": "OpenAlex journal search; publisher full text",
+    "url": "https://link.springer.com/article/10.1007/s11142-025-09914-3",
+    "research_question": "Can qualitative 10-K discussion improve predictions of tax outcomes and analyst tax forecast errors?",
+    "sample": "US corporate 10-K disclosures with tax outcomes; exact period and observation count not extracted.",
+    "datasets": [
+      "Compustat",
+      "SEC EDGAR 10-K filings"
+    ],
+    "identification": "LDA topic measures evaluated in in-sample and out-of-sample prediction models.",
+    "main_findings": "Narratives improve tax-outcome prediction; useful information is distributed across the 10-K, and analysts do not fully incorporate it. ([link.springer.com](https://link.springer.com/article/10.1007/s11142-025-09914-3?utm_source=openai))",
+    "theories": [
+      "Information-processing frictions"
+    ],
+    "relevance_score": 4,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.1007/s11142-025-09884-6": {
+    "paper_id": "10.1007/s11142-025-09884-6",
+    "title": "The consequences of expanded audit reporting: implications of tax key audit matters for tax attribute valuation and auditor-provided tax services",
+    "authors": [
+      "Daniel P. Lynch",
+      "Aaron J. Mandell",
+      "Linette M. Rousseau"
+    ],
+    "year": 2025,
+    "venue": "Review of Accounting Studies",
+    "status": "published",
+    "source": "OpenAlex journal search",
+    "url": "https://doi.org/10.1007/s11142-025-09884-6",
+    "research_question": "What are the valuation and auditor-tax-service consequences of tax KAMs?",
+    "sample": "Companies receiving tax KAMs; jurisdiction, period, and size not stated in abstract.",
+    "datasets": [],
+    "identification": "Comparisons involving tax KAM receipt, tax-attribute valuation, and concurrent and subsequent purchases of auditor tax services.",
+    "main_findings": "Investors discount tax avoidance and deferred tax assets of tax-KAM firms; tax KAM receipt is negatively associated with concurrent auditor tax-service purchases, which increase after tax KAMs cease.",
+    "theories": [
+      "Self-interest threats to auditor independence"
+    ],
+    "relevance_score": 3,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.1007/s11142-013-9234-y": {
+    "paper_id": "10.1007/s11142-013-9234-y",
+    "title": "The financial reporting of fair value based on managerial inputs versus market inputs: evidence from mortgage servicing rights",
+    "authors": [
+      "Jennifer Altamuro",
+      "Haiwen Zhang"
+    ],
+    "year": 2013,
+    "venue": "Review of Accounting Studies",
+    "status": "published",
+    "source": "OpenAlex journal search; author manuscript in University of Pennsylvania repository",
+    "url": "https://repository.upenn.edu/bitstreams/bc4a8927-d559-4126-bdea-85f67a1f8851/download",
+    "research_question": "Do managerial-input MSR fair values better reflect underlying cash flows and risk than market-input values?",
+    "sample": "MSR valuations classified as Level 2 versus Level 3; exact period and size not stated in abstract.",
+    "datasets": [],
+    "identification": "Associations of reported MSR values with future servicing-fee persistence and risk proxies.",
+    "main_findings": "The author manuscript reports that Level 3 values better reflect future servicing-fee persistence and show stronger associations with default and prepayment risk proxies. ([repository.upenn.edu](https://repository.upenn.edu/bitstreams/bc4a8927-d559-4126-bdea-85f67a1f8851/download?utm_source=openai))",
+    "theories": [
+      "Managerial information advantage versus valuation discretion"
+    ],
+    "relevance_score": 5,
+    "last_seen": "2026-10-20 13:23"
+  },
+  "10.1007/s11142-026-09949-0": {
+    "paper_id": "10.1007/s11142-026-09949-0",
+    "title": "Why are reported fair values sticky?",
+    "authors": [
+      "Paul Fischer",
+      "David Haushalter",
+      "Brian Miller",
+      "Kevin Pisciotta"
+    ],
+    "year": 2026,
+    "venue": "Review of Accounting Studies",
+    "status": "published",
+    "source": "OpenAlex journal search; publisher article",
+    "url": "https://doi.org/10.1007/s11142-026-09949-0",
+    "research_question": "How do reporting-risk and performance incentives affect Level 3 revaluation timing?",
+    "sample": "Mutual-fund Level 3 equity holdings; overall sample period and size not extracted.",
+    "datasets": [],
+    "identification": "Within-security cross-fund valuation comparisons and associations between market information, performance incentives, and revaluation.",
+    "main_findings": "Revaluations cluster around compelling information, downward adjustments are more likely after negative returns, and funds exploit timing discretion to improve performance rankings. ([doi.org](https://doi.org/10.1007/s11142-026-09949-0?utm_source=openai))",
+    "theories": [
+      "Reporting risk management",
+      "Convex performance incentives"
+    ],
+    "relevance_score": 4,
+    "last_seen": "2026-10-20 13:23"
   }
 }
